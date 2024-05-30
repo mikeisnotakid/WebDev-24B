@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+</head>
+<style>
+    /* div {
+        width: 200px;
+        height: 190px;
+        background-color: red;
+
+
+    }
+
+    div:hover {
+        height: 300px;
+        width: 500px;
+        background-color: green;
+        transition-delay: 1s ;
+        transition-duration: 9s;
+        transition-timing-function: ease-in-out;
+    } */
+    body {
+        animation-name: containerbox;
+        height: 100vh;
+        width: 100%;
+        background-color: #ccc;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+
+    }
+
+    h1 {
+        animation-name: forh1;
+        animation-duration: 9s;
+        position: relative;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes containerbox {
+        from {
+
+            background-color: #ccc;
+        }
+
+        to {
+
+
+
+            background-color: black;
+            color: white;
+          
+
+        }
+
+    }
+
+    @keyframes forh1 {
+        from {
+            left: 0px;
+            top: 0px;
+
+        }
+
+        to {
+            left: 300px;
+            background-color: red;
+            width: 600px;
+            text-align: center;
+
+        }
+
+    }
+</style>
+
+<body>
+    <!-- <div>
+
+    </div> -->
+    <div class="container">
+        <h1>Thanks for contacting us</h1>
+    </div>
+
+</body>
+
+</html>

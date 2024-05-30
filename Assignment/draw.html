@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw Project</title>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+
+        .main-container {
+            height: 500px;
+            width: 1200px;
+            /* border: 10px solid green; */
+            margin: auto;
+            margin-top: 200px;
+        }
+
+        .first-draw {
+            height: 250px;
+            width: 367px;
+            border: 20px solid black;
+
+        }
+
+        .first-cross-vertical {
+            height: 80px;
+            width: 8px;
+            border: 10px solid black;
+            margin-left: 40px;
+
+        }
+
+        .first-cross-horizontal {
+            width: 80px;
+            height: 8px;
+            border: 10px solid black;
+            position: relative;
+            top: 20px;
+            right: 45px;
+        }
+
+        .square {
+            height: 144px;
+            width: 151px;
+            border: 5px solid black;
+            position: relative;
+            left: 57px;
+        }
+
+        .second-cross-vertical {
+            height: 80px;
+            width: 8px;
+            border: 10px solid black;
+
+            position: relative;
+            left: 251px;
+            margin-top: -45px;
+        }
+
+        .second-cross-horizontal {
+            width: 80px;
+            height: 8px;
+            border: 10px solid black;
+            position: relative;
+            top: 20px;
+            right: 45px;
+
+        }
+
+        .second-draw {
+            margin-left: 480px;
+            ;
+
+        }
+
+        .car-top {
+            height: 89px;
+            width: 300px;
+            background-color: #1a1616c7;
+            border: 10px solid rgb(138, 43, 226);
+            border-top-right-radius: 196px;
+            border-top-left-radius: 196px;
+            border-bottom: none;
+            position: relative;
+            left: 110px;
+        }
+
+
+        .car-body {
+            height: 128px;
+            width: 529px;
+            background-color: blueviolet;
+            border-top-right-radius: 87px;
+            border-top-left-radius: 17px;
+        }
+
+
+
+        .first-tyre {
+            height: 103px;
+            width: 109px;
+            border-radius: 69px;
+            background-color: #423d3d;
+            border: 10px solid black;
+            position: relative;
+            left: 78px;
+            bottom: 34px;
+
+
+        }
+
+
+        .second-tyre {
+            height: 103px;
+            width: 109px;
+            border-radius: 68px;
+            background-color: #423d3d;
+            border: 10px solid black;
+            position: relative;
+            left: 333px;
+            bottom: 153px;
+
+        }
+
+        .vertical-divider {
+            height: 88px;
+            width: 6px;
+            background-color: #ccc;
+            /* border: 3px solid #673AB7; */
+            position: relative;
+            bottom: 462px;
+            left: 746px;
+        }
+
+        .back-light {
+            height: 20px;
+            width: 12px;
+            background-color: red;
+            position: relative;
+            bottom: 458px;
+            left: 479px;
+        }
+
+        .front-light {
+            height: 22px;
+            width: 12px;
+            border: 2px solid black;
+            background-color: white;
+            border-radius: 7px;
+            position: relative;
+            bottom: 444px;
+            left: 990px;
+        }
+
+
+
+        .first-tyre-div-vertical {
+            height: 65px;
+            width: 24px;
+            border: 10px solid red;
+        }
+
+        .first-tyre-div-horizontal {
+            width: 65px;
+            height: 24px;
+            border: 10px solid green;
+            position: relative;
+            bottom: 61px;
+            right: 20px;
+        }
+
+        .door-line {
+            height: 128px;
+            width: 6px;
+            background-color: #ccc;
+            position: relative;
+            bottom: 510px;
+            left: 746px;
+
+        }
+
+        .door-handle {
+            height: 10px;
+            width: 44px;
+            background-color: black;
+            position: relative;
+            bottom: 609px;
+            left: 681px;
+        }
+
+        .door-handle2 {
+            height: 10px;
+            width: 44px;
+            background-color: black;
+            position: relative;
+            bottom: 619px;
+            left: 783px;
+        }
+
+        .first-tyre-vertical {
+            height: 92px;
+            width: 6px;
+            border: 6px solid #ccc;
+            position: relative;
+            left: 47px;
+        }
+
+        .first-tyre-horizontal {
+            width: 99px;
+            height: 6px;
+            border: 6px solid #ccc;
+            position: relative;
+            bottom: 60px;
+        }
+
+        .second-tyre-vertical {
+            height: 92px;
+            width: 6px;
+            border: 6px solid #ccc;
+            position: relative;
+            left: 870px;
+            bottom: 548px;
+        }
+
+        .second-tyre-horizontal {
+            width: 99px;
+            height: 6px;
+            border: 6px solid #ccc;
+            position: relative;
+            bottom: 608px;
+            left: 823px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="first-draw">
+
+            <div class="first-cross-vertical">
+                <div class="first-cross-horizontal"></div>
+                <div class="square"></div>
+
+                <div class="second-cross-vertical">
+                    <div class="second-cross-horizontal"></div>
+                </div>
+
+
+            </div>
+
+            <div class="second-draw">
+                <div class="car-top">
+
+
+                </div>
+                <div class="car-body">
+
+                </div>
+                <div class="car-tyre">
+                    <div class="first-tyre">
+                        <div class="first-tyre-vertical"></div>
+                        <div class="first-tyre-horizontal"></div>
+
+                    </div>
+                    <div class="second-tyre"></div>
+
+                </div>
+
+            </div>
+
+            <div class="vertical-divider"></div>
+            <div class="back-light"></div>
+            <div class="front-light"></div>
+
+            <div class="door-line">
+
+
+            </div>
+
+            <div class="door-handle"></div>
+
+            <div class="door-handle2"></div>
+            <div class="second-tyre-vertical"></div>
+            <div class="second-tyre-horizontal"></div>
+
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+h1 {
+    color: blue;
+    border: 2px solid rgb(169, 228, 238);
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    border: 2px solid gray;
+}
+
