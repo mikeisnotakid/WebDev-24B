@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .main-container-left,
+        .main-container-right {
+           
+            height: 500px;
+            width: 50%;
+            float: left;
+            padding: 5px;
+        }
+
+        
+
+        .left-first-child {
+            height: 50%;
+
+            padding: 5px;
+        }
+
+        .left-first-child .child {
+            height: 100%;
+            background-color: black;
+        }
+
+        .left-second-child {
+            height: 50%;
+
+        }
+
+        .s-first-child {
+            height: 100%;
+            width: 50%;
+            float: left;
+            padding: 5px;
+        }
+
+        .s-first-child .child {
+            height: 100%;
+
+            background-color: brown;
+
+
+        }
+
+        .s-second-child {
+            height: 50%;
+            width: 50%;
+
+            float: left;
+            padding: 5px;
+
+        }
+
+        .s-second-child .child {
+            height: 100%;
+            background-color: lightblue;
+        }
+
+        .s-third-child {
+            height: 50%;
+            width: 50%;
+            float: left;
+            padding: 5px;
+        }
+
+        .s-third-child .child {
+            height: 100%;
+            background-color: lightpink;
+        }
+
+        .right-first-child {
+            height: 50%;
+        }
+
+        .right-first-child .f-first-child {
+            height: 100%;
+            width: 50%;
+            float: left;
+            padding: 5px;
+        }
+
+        .right-first-child .f-first-child .child {
+            height: 100%;
+            background-color: pink;
+        }
+
+        .right-first-child .f-second-child {
+            height: 100%;
+            width: 50%;
+
+            float: left;
+            padding: 5px;
+
+        }
+
+        .right-first-child .f-second-child .child {
+            height: 100%;
+            background-color: red;
+        }
+
+        .right-second-child {
+            height: 50%;
+        }
+
+        .right-second-child .second-first-child {
+            height: 50%;
+            padding: 5px;
+        }
+
+        .right-second-child .second-first-child .child {
+            height: 100%;
+            background-color: black;
+        }
+
+
+        .right-second-child .second-second-child {
+            height: 50%;
+            width: 50%;
+            padding: 5px;
+            float: left;
+        }
+
+        .right-second-child .second-second-child .child {
+            height: 100%;
+            background-color: red;
+
+        }
+
+        .right-second-child .second-third-child {
+            height: 50%;
+            width: 50%;
+            padding: 5px;
+            float: left;
+        }
+        .right-second-child .second-third-child .child {
+            height: 100%;
+            background-color: yellow;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container-left">
+        <div class="left-first-child">
+            <div class="child"></div>
+        </div>
+        <div class="left-second-child">
+            <div class="s-first-child">
+                <div class="child">
+
+                </div>
+            </div>
+            <div class="s-second-child">
+                <div class="child"></div>
+            </div>
+            <div class="s-third-child">
+                <div class="child"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container-right">
+        <div class="right-first-child">
+            <div class="f-first-child">
+                <div class="child"></div>
+            </div>
+            <div class="f-second-child">
+                <div class="child"></div>
+            </div>
+        </div>
+        <div class="right-second-child">
+            <div class="second-first-child">
+                <div class="child"></div>
+            </div>
+            <div class="second-second-child">
+                <div class="child"></div>
+            </div>
+            <div class="second-third-child">
+                <div class="child"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
