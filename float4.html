@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Practical</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .text {
+            width: 60%;
+            height: 500px;
+            background-color: #ccc;
+            float: left;
+            padding: 60px 20px;
+        }
+
+        .text .writeups {
+
+            padding: 10px;
+        }
+
+        .writeups span {
+            color: orangered;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .writeups p {
+            color: orangered;
+        }
+
+        .writeups h2 {
+            font-size: 35px;
+        }
+
+        .numbers .numeric {
+            width: 33.3%;
+
+            height: 100px;
+            float: left;
+            padding: 0px 10px;
+        }
+
+        .numeric h1 {
+            margin: 10px;
+            color: orangered;
+            font-size: 40px;
+        }
+
+        /* Styling form div */
+        .form {
+            width: 40%;
+            height: 500px;
+            padding: 100px 40px;
+            background-color: orangered;
+            float: left;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 15px 10px;
+            margin: 10px 0px;
+            border: none;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <div class="writeups">
+            <span>Get a quote</span>
+            <h2>Request A Free Quote</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quisquam in maiores tempore dicta,
+                laudantium atque eveniet aliquid aperiam, incidunt recusandae earum animi, illum aspernatur. Illo odio
+                corporisaecto dignissimos?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia,
+                repellendus nam dignissimos enim illo atque corrupti fugiat ullam labore est.</p>
+        </div>
+        <div class="numbers">
+            <div class="numeric">
+                <h1>225</h1>
+                <span>Skilled Expects</span>
+            </div>
+            <div class="numeric">
+                <h1>1050</h1>
+                <span>Happy Clients</span>
+            </div>
+            <div class="numeric">
+                <h1>2500</h1>
+                <span>Complete Projects</span>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <form action="#">
+            <input type="text" placeholder="Your Name">
+
+            <input type="text" placeholder="Your Email">
+
+            <input type="text" placeholder="Select a Service">
+
+            <input type="submit" class="btn" value="Get A Quote">
+        </form>
+    </div>
+</body>
+
+</html>
