@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        .main-container {
+            width: 80%;
+            height: 500px;
+            /* border: 4px solid green; */
+            padding: 10px 0px;
+            margin: auto;
+        }
+
+        .first-container,
+        .second-container,
+        .third-container {
+            width: 33.3%;
+            height: 320px;
+            padding: 20px;
+            float: left;
+        }
+
+        .first-container .child,
+        .third-container .child,
+        .second-container .child {
+            background-color: blueviolet;
+            padding: 20px;
+        }
+
+        img {
+            height: 120px;
+            width: 120px;
+            border-radius: 60px;
+            border: 3px solid white;
+        }
+
+        .img-div {
+            height: 120px;
+            width: 120px;
+            border-radius: 60px;
+            margin: auto;
+            position: relative;
+            bottom: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+        }
+
+        h3,
+        p {
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        p {
+
+            padding: 0px 10px;
+        }
+
+        button {
+            background-color: orangered;
+            color: white;
+            display: block;
+            height: 40px;
+            width: 120px;
+            border: none;
+            margin: auto;
+
+
+        }
+
+        button:hover {
+            background-color: white;
+            color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Services</h1>
+        <div class="first-container">
+            <div class="child">
+                <div class="img-div">
+                    <img src="./Images/logo.jpeg" alt="">
+                </div>
+
+                <h3>Residential Decoration</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae numquam nemo inventore fugit
+                    dicta pariatur porro asperiores maiores omnis sit.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="second-container">
+            <div class="child">
+                <div class="img-div">
+                    <img src="./Images/logo.jpeg" alt="">
+                </div>
+
+                <h3>Residential Decoration</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae numquam nemo inventore fugit
+                    dicta pariatur porro asperiores maiores omnis sit.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="third-container">
+            <div class="child">
+                <div class="img-div">
+                    <img src="./Images/logo.jpeg" alt="">
+                </div>
+
+                <h3>Residential Decoration</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae numquam nemo inventore fugit
+                    dicta pariatur porro asperiores maiores omnis sit.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+</body>
+
+</html>
