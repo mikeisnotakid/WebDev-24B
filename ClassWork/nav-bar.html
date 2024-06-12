@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+    .nav-bar{
+        width: 100%;
+        background-color:red;
+        float: left;
+    }
+        .home{
+            background-color: green;
+        }
+        ul li{
+            height: 50px;
+            margin: 20px 0;
+            list-style: none;
+            color: white;
+            padding: 3px 20px;
+            float: left;
+ 
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        ul li:hover:not(.home){
+        background-color: black;}
+        .About{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li class="home">Home</li>
+            <li>News</li>
+            <li>Contact</li>
+            <li class="About">About</li>
+        </ul>
+    </div>
+</body>
+</html>
