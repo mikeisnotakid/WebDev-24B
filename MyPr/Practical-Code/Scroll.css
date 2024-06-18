@@ -1,0 +1,13 @@
+.Scroll-Container{
+    max-height: 120px;
+    display: flex;
+    overflow-x: auto;
+    background-color: aqua; 
+}
+.Scroll-Container div{
+    height: 50px;
+    min-width:  110px;
+    line-height: 110px;
+   
+
+}

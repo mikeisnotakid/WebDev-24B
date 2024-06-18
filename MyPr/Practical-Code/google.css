@@ -1,0 +1,19 @@
+#googlePix{
+    width: 500px;
+    height: 150px;
+    display: block;
+}
+
+#searchBar{
+    width: 600px;
+    height: 50px;
+    border-radius: 40px;
+}
+button{
+    margin-top: 40px;
+    margin-left: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border: 5px solid #ccc;
+    border-radius: 3px;
+}

@@ -50,7 +50,7 @@ body {
 /* Navbar Style */
 .nav-bar-container {
     height: 90px;
-    overflow: hidden;
+  
 }
 
 .nav-bar-left {
@@ -73,6 +73,22 @@ body {
     float: left;
 
 }
+.price-content span {
+    background-color: black;
+    color: white;
+    height: 50px;
+    margin-bottom: 60px;
+    position: relative;
+   
+}
+ .price-content span{
+    display: none;
+}
+.price:hover .price-content span{
+    display: block;
+}
+
+
 
 .nav-bar-center li {
     float: left;
@@ -120,7 +136,6 @@ body {
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
-
 }
 
 .main-container-content {

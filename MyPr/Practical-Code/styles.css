@@ -1,0 +1,22 @@
+img{
+    width: 120px;
+    height: 150px;
+    
+}
+
+.Profile-container{
+    display: inline-block;
+    margin-left: 10px;
+    text-align: left;
+    background-color: #ccc;
+    
+  
+}
+
+button{
+    background-color: blue;
+    color: white;
+    border: 5px solid blue;
+    border-radius: 5px;
+}
+

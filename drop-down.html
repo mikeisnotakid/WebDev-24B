@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        .Dropdown {
+            border: 1px solid red;
+            display: inline;
+            position: absolute;
+        }
+
+        .Content {
+            border: 1px solid blue;
+            display: none;
+
+
+        }
+
+        .Dropdown:hover .Content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Dropdown">
+        <span>Hover...</span>
+        <div class="Content">
+            Tada............
+        </div>
+    </div>
+</body>
+
+</html>

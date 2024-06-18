@@ -1,0 +1,117 @@
+body {
+    background-color: snow;
+}
+
+.nav {
+    height: 80px;
+ 
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+  
+    color: white;
+    list-style: none;
+    gap: 50px;
+    justify-content: center;
+
+
+}
+
+.logo {
+    display: flex;
+    width: 400px;
+    
+
+}
+.logo li img{
+    width: 40px;
+}
+
+.right-nav-item {
+    display: flex;
+    width: 400px;
+    gap: 30px;
+    color: black;
+
+
+
+}
+.right-nav-item li svg{
+    height: 22px;
+    width: 26px;
+   
+}
+
+
+.first-p {
+
+    margin-top: 155px;
+    margin-left: 18%;
+    font-size: 24px;
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.left-container {
+    width: 400px;
+}
+
+.right-container {
+    width: 400px;
+}
+
+.left-container h1 {
+    font-size: 48px;
+}
+
+.right-container img {
+    height: 321px;
+    width: 400px;
+    border-bottom-left-radius: 180px;
+}
+
+.btn-div {
+    margin-left: 19%;
+}
+
+button {
+    height: 30px;
+    width: 170px;
+    background-color: blue;
+    color: white;
+    border: none;
+
+
+}
+
+.second-btn {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+    margin-left: 15px;
+
+}
+
+button:hover {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+}
+
+.second-btn:hover {
+    background-color: blue;
+    color: white;
+}

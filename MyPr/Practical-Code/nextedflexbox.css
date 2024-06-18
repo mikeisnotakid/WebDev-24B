@@ -1,0 +1,41 @@
+img{
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.main-container{
+    background-color: rgb(240, 237, 237);
+    width: 400px;
+    height: 135px;
+    display: flex;
+    margin: auto;
+}
+
+.image-container{
+    display: flex;
+   align-items: center;
+   width: 60px;
+   margin-left: 5px;
+}
+
+.headings-container{
+    width: 240px;
+}
+.headings-container :first-child{
+    font-size: 20px;
+    margin: 16px;
+    font-weight: bold;
+    
+}
+.headings-container p{
+    font-size: 13px;
+}
+.time-heading{
+    flex: 1;
+   
+}
+.time-heading p{
+    text-align: end;
+    margin-right:  10px;
+}

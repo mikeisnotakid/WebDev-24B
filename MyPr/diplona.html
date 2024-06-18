@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Nav Styling*/
+        .fa-user {
+            width: 30px;
+        }
+
+        .nav-bar {
+            height: 100px;
+            background: rgb(9, 44, 121);
+            background: linear-gradient(90deg, rgba(9, 44, 121, 1) 22%, rgba(119, 9, 121, 1) 56%, rgba(255, 0, 221, 1) 100%);
+            color: white;
+            font-size: 23px;
+        }
+
+        .left-nav-bar {
+            height: 100%;
+            width: 20%;
+            float: left;
+            padding: 0 0 0 100px;
+        
+        }
+        .left-nav-bar img{
+            height: 90%;
+            width: 50%;
+            
+        }
+
+        .center-nav-bar {
+            height: 100%;
+            width: 60%;
+            float: left;
+        }
+
+        .nav-center-items li {
+            list-style: none;
+            width: 110px;
+            float: left;
+            padding: 5% 0;
+        }
+        .nav-center-items li:hover{
+            font-size: 18px;
+            color: gold;
+        }
+
+        .right-nav-bar {
+            height: 100%;
+            width: 20%;
+
+            float: left;
+        }
+
+        .nav-right-items li {
+            float: left;
+            list-style: none;
+            width: 50%;
+            padding: 15% 0;
+
+
+        }
+        .nav-right-items li:hover{
+            font-size: 18px;
+            color: gold;
+        }
+
+        .nav-right-items input {
+            width: 70px;
+            height: 30px;
+
+        }
+
+
+
+        /* Banner section Styling  */
+
+        .banner-section {
+            height: 450px;
+        }
+
+        .banner-section .child {
+            background-color: darkgray;
+            background-image: url("https://www.niit-ph.com/Images/diploma.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+            height: 100%;
+            width: 100%;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        /* First Content DIV styling */
+        .first-content-DIV {
+            height: 500px;
+            margin: 50px 0 20px 0;
+            padding: 0 50px;
+
+
+        }
+
+        .first-content-DIV .child {
+            height: 100%;
+            border-radius: 20px;
+            box-shadow: 4px 16px 26px 21px rgba(204, 204, 204, 0.8);
+            -webkit-box-shadow: 4px 16px 26px 21px rgba(204, 204, 204, 0.8);
+            -moz-box-shadow: 4px 16px 26px 21px rgba(204, 204, 204, 0.8);
+        }
+
+        .first-content-Div-heading {
+            height: 25%;
+        }
+
+        .first-content-Div-heading-writeUps {
+            float: left;
+            padding: 17px 30px 0px 30px;
+        }
+
+
+        .first-content-Div-heading-2 {
+            height: 25%;
+        }
+
+        .button-Div {
+            clear: both;
+            padding: 20px 30px;
+            height: 100%;
+        }
+
+        .button-Div button {
+
+            height: 70px;
+            border-radius: 40px;
+            margin: 0 10px;
+            font-size: 25px;
+            border: none;
+            background-color: darkgray;
+            color: black;
+
+        }
+
+        .first-content-Div-content-section {
+            height: 50%;
+        }
+
+        .first-content-Div-content-section-Write-ups {
+            float: left;
+            padding: 0 30px;
+            font-size: 30px;
+        }
+
+        .first-content-Div-content-section-Write-ups button {
+            height: 60px;
+            width: 200px;
+            background: rgb(9, 95, 121);
+            background: linear-gradient(90deg, rgba(9, 95, 121, 1) 30%, rgba(81, 64, 165, 1) 47%, rgba(229, 0, 255, 1) 100%);
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 4px;
+
+        }
+        .first-content-Div-content-section-Write-ups button:hover{
+            background: white;
+            color: black;
+            border: 3px solid darkgray;
+        }
+
+        /* Second Content DIV styling */
+
+        .second-content-DIV {
+            height: 500px;
+            margin: 50px 0 50px 0;
+            padding: 0 50px;
+        }
+
+        .second-content-DIV .child {
+            height: 100%;
+            border-radius: 20px;
+            box-shadow: 4px 16px 26px 21px rgba(204, 204, 204, 0.8);
+            -webkit-box-shadow: 4px 16px 26px 21px rgba(204, 204, 204, 0.8);
+            -moz-box-shadow: 4px 16px 26px 21px rgba(204, 204, 204, 0.8);
+        }
+
+        .second-content-Div-heading {
+            height: 25%;
+        }
+
+        .second-content-Div-heading-writeUps {
+            float: left;
+            padding: 17px 30px 0px 30px;
+        }
+
+        .second-content-Div-heading-2 {
+            height: 25%;
+        }
+
+        .button-Div {
+            clear: both;
+            padding: 20px 30px;
+            height: 100%;
+        }
+
+        .button-Div button {
+
+            height: 70px;
+            border-radius: 40px;
+            margin: 0 10px;
+            font-size: 25px;
+            border: none;
+            background-color: darkgray;
+            color: black;
+
+
+        }
+
+        .second-content-Div-content-section {
+            height: 50%;
+        }
+
+        .second-content-Div-content-section-Write-ups {
+            float: left;
+            padding: 0 30px;
+            font-size: 30px;
+        }
+
+        .second-content-Div-content-section-Write-ups button {
+            height: 60px;
+            width: 200px;
+            background: rgb(9, 95, 121);
+            background: linear-gradient(90deg, rgba(9, 95, 121, 1) 30%, rgba(81, 64, 165, 1) 47%, rgba(229, 0, 255, 1) 100%);
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 4px;
+
+        }
+
+        .second-content-Div-content-section-Write-ups button:hover{
+            background: white;
+            color: black;
+            border: 3px solid darkgray;
+        }
+
+        /* Footer design */
+        .footer-section {
+            height: 500px;
+
+        }
+
+        .footer-section .child {
+            height: 100%;
+            background-color: black;
+            background-image: url("images/smoke-376543_640.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100%;
+        }
+
+        .footer-head {
+            height: 40%;
+            border-bottom: 2px solid white;
+
+        }
+
+        .footer-body {
+            height: 60%;
+
+
+        }
+
+        .footer-box {
+            width: 12.5%;
+            height: 100%;
+
+            padding: 0 10px;
+            float: left;
+        }
+
+        .footer-child {
+            height: 100%;
+            background-color: red;
+        }
+
+        .footer-Divs {
+            height: 100%;
+            width: 25%;
+            padding: 0 10px;
+            float: left;
+        }
+
+        .footer-Divs-child {
+            height: 100%;
+
+
+
+
+        }
+
+        .footer-Divs-child-write-up {
+            float: left;
+            color: white;
+            padding: 0 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav Bar Section -->
+    <div class="nav-bar">
+        <div class="left-nav-bar">
+            <img src="images/niit-removebg-preview.png" >
+        </div>
+        <div class="center-nav-bar">
+            <div class="nav-center-items">
+                <li>Course</li>
+                <li>Diploma</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </div>
+        </div>
+        <div class="right-nav-bar">
+            <div class="nav-right-items">
+
+                <li><i class="fa fa-user" aria-hidden="true"></i>Account
+                </li>
+                <li>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </li>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Banner Section -->
+    <div class="banner-section">
+        <div class="child"></div>
+    </div>
+
+
+    <!-- First Content DIV  -->
+    <div class="first-content-DIV">
+        <div class="child">
+            <div class="first-content-Div-heading">
+                <div class="first-content-Div-heading-writeUps">
+                    <h2>BSc In Software Development
+                    </h2>
+                    <p>NIIT Port-Harcourt</p>
+                </div>
+
+            </div>
+            <div class="first-content-Div-heading-2">
+                <div class="button-Div">
+                    <button><i class="fa fa-graduation-cap" aria-hidden="true"></i> Bsc</button>
+                    <button><i class="fa fa-clock-o" aria-hidden="true"></i> Full Time</button>
+                    <button><i class="fa fa-spinner" aria-hidden="true"></i> 2 years</button>
+                    <button><i class="fa fa-comments" aria-hidden="true"></i> English</button>
+                </div>
+
+            </div>
+            <div class="first-content-Div-content-section">
+                <div class="first-content-Div-content-section-Write-ups">
+                    <p>Unlock your future with MMS Software Engineering—transformative 2-year diploma for immediate
+                        professional success. Dual-qualification options with your graduation degree. Blend core skills,
+                        grooming, and modern expertise to enhance your academic journey.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Container Div-->
+    <div class="second-content-DIV">
+        <div class="child">
+            <div class="second-content-Div-heading">
+                <div class="second-content-Div-heading-writeUps">
+                    <h2>BSc In Infrastructure Management
+                    </h2>
+                    <p>NIIT Port-Harcourt</p>
+                </div>
+
+            </div>
+            <div class="second-content-Div-heading-2">
+                <div class="button-Div">
+                    <button><i class="fa fa-graduation-cap" aria-hidden="true"></i> Bsc</button>
+                    <button><i class="fa fa-clock-o" aria-hidden="true"></i> Full Time</button>
+                    <button><i class="fa fa-spinner" aria-hidden="true"></i> 2 years</button>
+                    <button><i class="fa fa-comments" aria-hidden="true"></i> English</button>
+                </div>
+
+            </div>
+            <div class="second-content-Div-content-section">
+                <div class="second-content-Div-content-section-Write-ups">
+                    <p>Embark on the Master Mind Series – Infrastructure Management program for a strong foundation in
+                        networking, enterprise solutions, and security. Specialize in Linux or Microsoft with NIIT's
+                        unique opportunity.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer container sectiodn -->
+    <div class="footer-section">
+        <div class="child">
+            <div class="footer-head">
+                <div class="footer-box">
+                    <div class="footer-child"></div>
+                </div>
+                <div class="footer-box">
+                    <div class="footer-child"></div>
+                </div>
+                <div class="footer-box">
+                    <div class="footer-child"></div>
+                </div>
+                <div class="footer-box">
+                    <div class="footer-child"></div>
+                </div>
+                <div class="footer-box">
+                    <div class="footer-child"></div>
+                </div>
+                <div class="footer-box">
+                    <div class="footer-child"></div>
+                </div>
+                <div class="footer-box">
+                    <div class="footer-child"></div>
+                </div>
+                <div class="footer-box">
+                    <div class="footer-child"></div>
+                </div>
+            </div>
+
+            <div class="footer-body">
+                <div class="footer-Divs">
+                    <div class="footer-Divs-child">
+                        <div class="footer-Divs-child-write-up">
+                            <h1>Reach Us</h1>
+                            <p>(+234) 806 962 5113 </p>
+                            <p>niitportharcourtinquires @gmail.com</p>
+                            <p> 1 Kaduna Street, Port Harcourt, Nigeria</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer-Divs">
+                    <div class="footer-Divs-child">
+                        <div class="footer-Divs-child-write-up">
+                            <h1>Company</h1>
+                            <p>About us</p>
+                            <p>Contact Us</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-Divs">
+                    <div class="footer-Divs-child">
+                        <div class="footer-Divs-child-write-up">
+                            <h1>Executives</h1>
+                            <p>Faculties</p>
+                            <p>Management</p>
+                            <p>Testimonials</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-Divs">
+                    <div class="footer-Divs-child">
+                        <div class="footer-Divs-child-write-up">
+                            <h1>Join Our Newsletter</h1>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
