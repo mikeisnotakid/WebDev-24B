@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav Styling*/
+.fa-user {
+    width: 30px;
+}
+
+.nav-bar {
+    height: 100px;
+    background: rgb(9, 44, 121);
+    background: linear-gradient(90deg, rgb(71, 142, 231) 22%, rgb(138, 40, 186) 56%, rgb(214, 9, 199)100%);
+    color: white;
+    font-size: 23px;
+}
+
+.left-nav-bar {
+    height: 100%;
+    width: 30%;
+    float: left;
+    padding: 8px 10%;
+
+}
+
+.left-nav-bar img {
+    height: 90%;
+    width: 80px;
+
+
+}
+
+.center-nav-bar {
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+
+.nav-center-items li {
+    list-style: none;
+    width: 110px;
+    float: left;
+    padding: 30px 0;
+}
+
+.nav-center-items li:hover {
+    font-size: 18px;
+    color: gold;
+}
+
+.right-nav-bar {
+    height: 100%;
+    width: 30%;
+    float: left;
+}
+
+.nav-right-items li {
+    float: left;
+    list-style: none;
+    width: 50%;
+    padding: 30px 0;
+
+
+}
+
+.nav-right-items li:hover {
+    font-size: 18px;
+    color: gold;
+}
+
+.nav-right-items input {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    color: rgb(214, 9, 199);
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 0 10px;
+    border: none;
+    float: left;
+
+}
+
+::placeholder {
+    color: rgb(214, 9, 199);
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input {
+    display: none;
+}
+
+.nav-right-items li:hover input {
+    display: block;
+}
+
+
+
+
+
+/* Banner section Styling  */
+
+.banner-section {
+    height: 450px;
+}
+
+.banner-section .child {
+    background-color: darkgray;
+    background-image: url("https://www.niit-ph.com/Images/diploma.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.banner-section-writeups h1 {
+    margin: 0;
+    padding: 10% 0;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+}
+
+/* First Content DIV styling */
+
+
+.first-content-DIV {
+    height: 500px;
+    margin: 50px 0 20px 0;
+    padding: 0 50px;
+
+
+}
+
+
+.first-content-DIV .child {
+    height: 100%;
+    border-radius: 20px;
+    overflow: auto;
+    box-shadow: 4px 16px 26px 21px rgba(204, 204, 204, 0.8);
+    -webkit-box-shadow: 4px 16px 26px 21px rgba(204, 204, 204, 0.8);
+    -moz-box-shadow: 4px 16px 26px 21px rgba(204, 204, 204, 0.8);
+}
+
+.first-content-Div-heading {
+    height: 25%;
+}
+
+.first-content-Div-heading-writeUps {
+    float: left;
+    padding: 17px 30px 0px 30px;
+}
+
+
+.first-content-Div-heading-2 {
+    height: 25%;
+}
+
+.button-Div {
+    clear: both;
+    padding: 20px 30px;
+    height: 100%;
+}
+
+.button-Div button {
+
+    height: 70px;
+    border-radius: 40px;
+    margin: 0 10px;
+    font-size: 25px;
+    border: none;
+    background-color: darkgray;
+    color: black;
+
+}
+
+.first-content-Div-content-section {
+    height: 50%;
+}
+
+.first-content-Div-content-section-Write-ups {
+    float: left;
+    padding: 0 30px;
+    font-size: 30px;
+}
+
+.first-content-Div-content-section-Write-ups button {
+    height: 60px;
+    width: 200px;
+    background: rgb(9, 95, 121);
+
+    background: linear-gradient(90deg, rgb(71, 142, 231) 22%, rgb(138, 40, 186) 56%, rgb(214, 9, 199)100%);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.first-content-Div-content-section-Write-ups button:hover {
+    background: white;
+    color: black;
+    border: 3px solid darkgray;
+}
+
+/* Second Content DIV styling */
+
+.second-content-DIV {
+    height: 500px;
+    margin: 50px 0 50px 0;
+    padding: 0 50px;
+
+}
+
+.second-content-DIV .child {
+    height: 100%;
+    border-radius: 20px;
+    overflow: auto;
+    box-shadow: 4px 16px 26px 21px rgba(204, 204, 204, 0.8);
+    -webkit-box-shadow: 4px 16px 26px 21px rgba(204, 204, 204, 0.8);
+    -moz-box-shadow: 4px 16px 26px 21px rgba(204, 204, 204, 0.8);
+}
+
+.second-content-Div-heading {
+    height: 25%;
+}
+
+.second-content-Div-heading-writeUps {
+    float: left;
+    padding: 17px 30px 0px 30px;
+}
+
+.second-content-Div-heading-2 {
+    height: 25%;
+}
+
+.button-Div {
+    clear: both;
+    padding: 20px 30px;
+    height: 100%;
+}
+
+.button-Div button {
+
+    height: 70px;
+    border-radius: 40px;
+    margin: 0 10px;
+    font-size: 25px;
+    border: none;
+    background-color: darkgray;
+    color: black;
+
+
+}
+
+.second-content-Div-content-section {
+    height: 50%;
+
+}
+
+.second-content-Div-content-section-Write-ups {
+    float: left;
+    padding: 0 30px;
+    font-size: 30px;
+}
+
+.second-content-Div-content-section-Write-ups button {
+    height: 60px;
+    width: 200px;
+    background: rgb(9, 95, 121);
+    background: linear-gradient(90deg, rgb(71, 142, 231) 22%, rgb(138, 40, 186) 56%, rgb(214, 9, 199)100%);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.second-content-Div-content-section-Write-ups button:hover {
+    background: white;
+    color: black;
+    border: 3px solid darkgray;
+}
+
+/* Footer design */
+.footer-section {
+    height: 500px;
+
+}
+
+.footer-section .child {
+    height: 100%;
+    background-color: black;
+    background-image: url("images/smoke-376543_640.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.footer-header-section {
+    height: 10%;
+
+}
+
+.footer-header-section-writeups h3 {
+    color: white;
+    text-align: center;
+    padding: 13px 0;
+}
+
+.footer-head {
+    height: 40%;
+    border-bottom: 2px solid white;
+
+}
+
+.footer-body {
+    height: 50%;
+
+
+}
+
+.footer-box {
+    width: 12.5%;
+    height: 100%;
+    padding: 0 10px;
+    float: left;
+}
+
+
+.footer-child {
+    height: 100%;
+
+
+}
+
+
+.footer-child:hover {
+    width: 90%;
+    height: 90%;
+    float: right;
+    border: 5px solid rgb(214, 9, 199);
+
+
+}
+
+.footer-Divs {
+    height: 100%;
+    width: 25%;
+    padding: 0 10px;
+    float: left;
+}
+
+.footer-Divs-child {
+    height: 100%;
+
+}
+
+.footer-Divs-child-write-up {
+    float: left;
+    color: white;
+    padding: 0 70px;
+}
