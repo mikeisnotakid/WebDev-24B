@@ -7,6 +7,23 @@ body {
     padding: 0;
 }
 
+/* To top Div */
+.to-top {
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgb(71, 142, 231) 22%, rgb(138, 40, 186) 56%, rgb(214, 9, 199)100%);
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+}
+
+.fa-arrow-up {
+    color: white;
+    color: white;
+    padding: 20px 21px;
+}
+
 /* Nav Styling*/
 .fa-user {
     width: 30px;
@@ -46,7 +63,14 @@ body {
     width: 110px;
     float: left;
     padding: 30px 0;
+
 }
+
+.nav-center-items a {
+    color: white;
+}
+
+
 
 .nav-center-items li:hover {
     font-size: 18px;
@@ -74,8 +98,8 @@ body {
 }
 
 .nav-right-items input {
-    width: 100px;
-    height: 40px;
+    width: 0px;
+    height: 0px;
     background-color: white;
     color: rgb(214, 9, 199);
     border-radius: 10px;
@@ -98,10 +122,34 @@ input:focus {
 
 input {
     display: none;
+
 }
 
 .nav-right-items li:hover input {
     display: block;
+    animation-name: forinput;
+    animation-duration: 2s;
+    position: relative;
+
+
+}
+
+@keyframes forinput {
+    from {
+
+        width: 20px;
+        height: 20px;
+        right: 20px;
+    }
+
+    to {
+        right: 50px;
+        height: 40px;
+        width: 150px;
+
+
+    }
+
 }
 
 
@@ -116,7 +164,7 @@ input {
 
 .banner-section .child {
     background-color: darkgray;
-    background-image: url("https://www.niit-ph.com/Images/diploma.jpg");
+    background-image: linear-gradient(-35deg, rgb(134, 49, 209), transparent), url("https://www.niit-ph.com/Images/diploma.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -124,6 +172,7 @@ input {
     width: 100%;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+
 }
 
 .banner-section-writeups h1 {
@@ -194,7 +243,7 @@ input {
 .first-content-Div-content-section-Write-ups {
     float: left;
     padding: 0 30px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .first-content-Div-content-section-Write-ups button {
@@ -274,7 +323,7 @@ input {
 .second-content-Div-content-section-Write-ups {
     float: left;
     padding: 0 30px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .second-content-Div-content-section-Write-ups button {
@@ -323,14 +372,13 @@ input {
 
 .footer-head {
     height: 40%;
-    border-bottom: 2px solid white;
+    margin-bottom: 10px;
 
 }
 
 .footer-body {
     height: 50%;
-
-
+    border-top: 2px solid white;
 }
 
 .footer-box {
@@ -349,13 +397,40 @@ input {
 
 
 .footer-child:hover {
-    width: 90%;
-    height: 90%;
+    animation-name: footer-child;
+    animation-duration: 1s;
+    position: relative;
     float: right;
     border: 5px solid rgb(214, 9, 199);
 
 
+
 }
+
+@keyframes footer-child {
+    from {
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+
+
+
+    }
+
+    to {
+
+
+
+        border: 5px solid white;
+        bottom: 15px;
+
+    }
+
+}
+
+
+
+
 
 .footer-Divs {
     height: 100%;
@@ -373,4 +448,9 @@ input {
     float: left;
     color: white;
     padding: 0 70px;
+}
+
+html {
+    scroll-behavior: smooth;
+
 }
