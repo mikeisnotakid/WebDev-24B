@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" href="https://fonts.gstatic.com/s/i/productlogos/maps/v7/192px.svg">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            /* height: 100000px; */
+
+
+        }
+
+        .nav-bar {
+            height: 70px;
+            /* border: 4px solid green; */
+            background-color: white;
+            box-shadow: 10px 13px 8px 0px rgba(204, 204, 204, 0.79);
+            -webkit-box-shadow: 10px 13px 8px 0px rgba(204, 204, 204, 0.79);
+            -moz-box-shadow: 10px 13px 8px 0px rgba(204, 204, 204, 0.79);
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            overflow: hidden;
+
+
+
+        }
+
+        .left-nav-bar {
+            height: 100%;
+            width: 20%;
+            /* border: 4px solid red; */
+            padding: 5px 5px;
+            float: left;
+
+        }
+
+        .left-nav-bar .child {
+            float: left;
+            height: 100%;
+            width: 100%;
+            /* background-color: gold; */
+        }
+
+        .left-nav-image-container {
+            height: 100%;
+            width: 15%;
+            float: left;
+            /* border: 4px solid purple; */
+        }
+
+        .left-nav-image-container img {
+            height: 60px;
+            width: 30px;
+        }
+
+        .left-nav-content-container {
+            height: 100%;
+            width: 85%;
+            float: left;
+            /* border: 4px solid darkblue; */
+        }
+
+        .left-nav-content-container p {
+            font-size: 23px;
+
+        }
+
+
+        .center-nav-bar {
+            height: 100%;
+            width: 50%;
+            /* border: 4px solid yellow; */
+            float: left;
+            padding: 5px 5px;
+        }
+
+        .center-nav-bar .child {
+            /* background-color: brown; */
+            height: 100%;
+        }
+
+        .nav-center-list {
+            float: left;
+            font-size: 18px;
+            color: rgb(111, 111, 113);
+        }
+
+        .nav-center-list li {
+            list-style: none;
+            float: left;
+            width: 120px;
+        }
+
+        .right-nav-bar {
+            height: 100%;
+            width: 30%;
+            /* border: 4px solid purple; */
+            padding: 5px 5px;
+            float: left;
+        }
+
+        .right-nav-bar .child {
+            height: 100%;
+            /* background-color: yellow; */
+
+        }
+
+        /* .right-nav-btn-container{
+            padding: 5px 0;
+          
+        } */
+        .btn-child button {
+            height: 50px;
+            width: 180px;
+            background-color: blue;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 15px;
+
+        }
+
+        .btn-child button:hover {
+            background-color: rgb(11, 11, 178);
+        }
+
+
+        .btn-child {
+            float: right;
+            padding: 5px 10px;
+        }
+
+        .right-nav-first-btn button {
+            background-color: white;
+            color: blue;
+            border: 0.1px solid blue;
+        }
+
+        .right-nav-first-btn button:hover {
+            background-color: lightblue;
+        }
+
+        /* First Section */
+        .first-section {
+            height: 300px;
+            /* border: 4px solid green; */
+            margin-top: 90px;
+            padding: 0 185px;
+            overflow: hidden;
+        }
+
+        .first-section .child {
+            height: 100%;
+            /* background-color: purple; */
+            text-align: center;
+
+
+        }
+
+        .first-section .child h1 {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 60px;
+            padding: 10px 0;
+        }
+
+        .first-section .child img {
+            /* height: 150px; */
+            width: 60px;
+            padding: 20px 0;
+        }
+
+        .first-section .child button {
+            height: 50px;
+            width: 130px;
+            background-color: blue;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .first-section .child button:hover {
+            background-color: rgb(11, 11, 178);
+        }
+
+        /* second-section */
+
+        .second-section {
+            height: 600px;
+            border: 4px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <div class="nav-bar">
+        <div class="left-nav-bar">
+            <div class="child">
+                <div class="left-nav-image-container">
+                    <img src="google map svg.svg" alt="">
+                </div>
+                <div class="left-nav-content-container">
+                    <p>Google Maps Platform</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="center-nav-bar">
+            <div class="child">
+                <div class="nav-center-list">
+                    <ul>
+                        <li>Why Google </li>
+                        <li> Products <i class="fa fa-sort-desc" aria-hidden="true"></i></li>
+                        <li> Solutions <i class="fa fa-sort-desc" aria-hidden="true"></i></li>
+                        <li>Pricing</li>
+                        <li>Resources <i class="fa fa-sort-desc" aria-hidden="true"></i></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-nav-bar">
+            <div class="child">
+                <div class="btn-child">
+                    <button>Get started</button>
+                </div>
+
+                <div class="btn-child right-nav-first-btn">
+                    <button>Contact sales</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- First-Section -->
+    <div class="first-section">
+        <div class="child">
+            <img src="google map svg.svg">
+            <h1>Make the world your platform</h1>
+            <button>Get started</button>
+        </div>
+    </div>
+
+    <!-- Second Section -->
+    <div class="second-section">
+        <div class="child"></div>
+    </div>
+</body>
+
+</html>
