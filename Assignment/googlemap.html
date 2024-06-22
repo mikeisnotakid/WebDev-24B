@@ -7,202 +7,7 @@
     <title>Google Map</title>
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
     <link rel="icon" href="https://fonts.gstatic.com/s/i/productlogos/maps/v7/192px.svg">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            /* height: 100000px; */
-
-
-        }
-
-        .nav-bar {
-            height: 70px;
-            /* border: 4px solid green; */
-            background-color: white;
-            box-shadow: 10px 13px 8px 0px rgba(204, 204, 204, 0.79);
-            -webkit-box-shadow: 10px 13px 8px 0px rgba(204, 204, 204, 0.79);
-            -moz-box-shadow: 10px 13px 8px 0px rgba(204, 204, 204, 0.79);
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: 0;
-            overflow: hidden;
-
-
-
-        }
-
-        .left-nav-bar {
-            height: 100%;
-            width: 20%;
-            /* border: 4px solid red; */
-            padding: 5px 5px;
-            float: left;
-
-        }
-
-        .left-nav-bar .child {
-            float: left;
-            height: 100%;
-            width: 100%;
-            /* background-color: gold; */
-        }
-
-        .left-nav-image-container {
-            height: 100%;
-            width: 15%;
-            float: left;
-            /* border: 4px solid purple; */
-        }
-
-        .left-nav-image-container img {
-            height: 60px;
-            width: 30px;
-        }
-
-        .left-nav-content-container {
-            height: 100%;
-            width: 85%;
-            float: left;
-            /* border: 4px solid darkblue; */
-        }
-
-        .left-nav-content-container p {
-            font-size: 23px;
-
-        }
-
-
-        .center-nav-bar {
-            height: 100%;
-            width: 50%;
-            /* border: 4px solid yellow; */
-            float: left;
-            padding: 5px 5px;
-        }
-
-        .center-nav-bar .child {
-            /* background-color: brown; */
-            height: 100%;
-        }
-
-        .nav-center-list {
-            float: left;
-            font-size: 18px;
-            color: rgb(111, 111, 113);
-        }
-
-        .nav-center-list li {
-            list-style: none;
-            float: left;
-            width: 120px;
-        }
-
-        .right-nav-bar {
-            height: 100%;
-            width: 30%;
-            /* border: 4px solid purple; */
-            padding: 5px 5px;
-            float: left;
-        }
-
-        .right-nav-bar .child {
-            height: 100%;
-            /* background-color: yellow; */
-
-        }
-
-        /* .right-nav-btn-container{
-            padding: 5px 0;
-          
-        } */
-        .btn-child button {
-            height: 50px;
-            width: 180px;
-            background-color: blue;
-            border: none;
-            color: white;
-            border-radius: 5px;
-            font-size: 15px;
-
-        }
-
-        .btn-child button:hover {
-            background-color: rgb(11, 11, 178);
-        }
-
-
-        .btn-child {
-            float: right;
-            padding: 5px 10px;
-        }
-
-        .right-nav-first-btn button {
-            background-color: white;
-            color: blue;
-            border: 0.1px solid blue;
-        }
-
-        .right-nav-first-btn button:hover {
-            background-color: lightblue;
-        }
-
-        /* First Section */
-        .first-section {
-            height: 300px;
-            /* border: 4px solid green; */
-            margin-top: 90px;
-            padding: 0 185px;
-            overflow: hidden;
-        }
-
-        .first-section .child {
-            height: 100%;
-            /* background-color: purple; */
-            text-align: center;
-
-
-        }
-
-        .first-section .child h1 {
-            margin: 0;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 60px;
-            padding: 10px 0;
-        }
-
-        .first-section .child img {
-            /* height: 150px; */
-            width: 60px;
-            padding: 20px 0;
-        }
-
-        .first-section .child button {
-            height: 50px;
-            width: 130px;
-            background-color: blue;
-            border: none;
-            color: white;
-            border-radius: 5px;
-            font-size: 15px;
-        }
-
-        .first-section .child button:hover {
-            background-color: rgb(11, 11, 178);
-        }
-
-        /* second-section */
-
-        .second-section {
-            height: 600px;
-            border: 4px solid green;
-        }
-    </style>
+    <link rel="stylesheet" href="googlemap.css">
 </head>
 
 <body>
@@ -259,7 +64,90 @@
 
     <!-- Second Section -->
     <div class="second-section">
-        <div class="child"></div>
+        <div class="child">
+            <div class="second-section-left">
+                <video loop muted autoplay>
+                    <source
+                        src="https://storage.googleapis.com/gweb-earth-maps-platform/maps-platform/homepage_m02_masonry-cards_why-google_2_video-bg-desktop.mp4"
+                        type="video/mp4">
+                </video>
+
+            </div>
+            <div class="second-section-center">
+                <div class="second-section-center-top">
+                    <div class="child">
+
+                    </div>
+                </div>
+                <div class="second-section-center-bottom">
+                    <div class="child">
+
+                    </div>
+                </div>
+            </div>
+            <div class="second-section-right">
+                <div class="child">
+                    <div class="second-section-right-top">
+                        <video loop muted autoplay>
+                            <source
+                                src="https://storage.googleapis.com/gweb-earth-maps-platform/maps-platform/homepage_m02_masonry-cards_address-validation-bg.mp4">
+                        </video>
+                    </div>
+                    <div class="second-section-right-bottom">
+                        <video loop muted autoplay>
+                            <source
+                                src="https://storage.googleapis.com/gweb-earth-maps-platform/maps-platform/homepage_m02_masonry-cards_I-O_2024-bg.mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third section -->
+    <div class="third-section">
+        <div class="write-up">
+            <h1>
+                View the latest updates</h1>
+        </div>
+        <div class="child">
+            <div class="third-section-left">
+                <div class="child"></div>
+                <div class="second-child">
+                    <img
+                        src="https://lh3.googleusercontent.com/TU8u4bupgHfqmYth8BeyyFJLM40DcM-5X89z_U8-UySlcskXbHDrq_Z0Q0B_02dCafJfQpSF8HVv_ErxvkNo0fbv0YLW0Jk_kHytLKg=w210">
+                </div>
+            </div>
+            <div class="third-section-center">
+                <div class="child"></div>
+                <div class="second-child">
+                    <img
+                        src="https://lh3.googleusercontent.com/qjm_BDWaflppJdPnxIzs2lyGOesuGrUlLw-EcaXZmYdASMOCahFFP0g9flrrri_2G6CUDH-P85UC0DP_2Vme3MP7IIXJpsKlRKAsah4=w210">
+                </div>
+            </div>
+            <div class="third-section-right">
+                <div class="child"></div>
+                <div class="second-child">
+                    <img
+                        src="https://lh3.googleusercontent.com/7Hdt6ClA5Awvz_GOBfApPA7PF5QzPYcnhadIf3G1HyIK8a3ibCkL33i40f2A2G_dbDV_ox-L8Pe0juma5jcliobz1GLxhNtEfCtkCOc=w210">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fourth section -->
+    <div class="fourth-section">
+        <video loop muted autoplay>
+            <source
+                src="https://storage.googleapis.com/gweb-earth-maps-platform/maps-platform/homepage_m05_carousel-video-01_trans-logistics-VIDEO-desktop.mp4">
+        </video>
+        <div class="fourth-section-write-up">
+            <h2>
+                Transportation & Logistics solutions</h2>
+            <p>Power rides and deliveries with real-time insights.</p>
+            <button>Learn more</button>
+        </div>
+
     </div>
 </body>
 
