@@ -9,6 +9,10 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-image: url("https://lh3.googleusercontent.com/4QOjqBImLWiBXQdGlPZ-zkrLDizbwv924XzhA5TJpOn1-7vTDMNZL0JB5pHVJX4MZh8nWnzZeG4xlXAUe2S9Yosg-b3q7yucB_-7PQ=rw-e365-w2880");
+   
+
+
     /* height: 100000px; */
 
 
@@ -26,6 +30,7 @@ body {
     right: 0;
     top: 0;
     overflow: hidden;
+    z-index: 20;
 
 
 
@@ -160,6 +165,7 @@ body {
     padding: 0 60px;
     overflow: auto;
     display: none;
+    z-index: 10;
 }
 
 #dropdown2 {
@@ -175,6 +181,7 @@ body {
     width: 100%;
     padding: 0 60px;
     display: none;
+    z-index: 10;
 }
 
 #dropdown .child {
