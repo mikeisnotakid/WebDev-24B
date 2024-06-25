@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("https://lh3.googleusercontent.com/4QOjqBImLWiBXQdGlPZ-zkrLDizbwv924XzhA5TJpOn1-7vTDMNZL0JB5pHVJX4MZh8nWnzZeG4xlXAUe2S9Yosg-b3q7yucB_-7PQ=rw-e365-w2880");
-   
+
 
 
     /* height: 100000px; */
@@ -273,6 +273,29 @@ body {
 }
 
 /* second-section */
+@keyframes ArrowMove {
+    from {
+        left: 0px;
+        top: 0px;
+
+    }
+
+    to {
+        left: 40px;
+
+
+    }
+
+}
+
+.fa-arrow-right {
+    font-size: 55px;
+    padding: 10px 0;
+    animation-name: ArrowMove;
+    animation-duration: 3s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
 
 .second-section {
     height: 900px;
@@ -302,6 +325,25 @@ body {
     box-shadow: 12px 9px 14px 8px rgba(204, 204, 204, 0.72);
     -webkit-box-shadow: 12px 9px 14px 8px rgba(204, 204, 204, 0.72);
     -moz-box-shadow: 12px 9px 14px 8px rgba(204, 204, 204, 0.72);
+}
+
+.second-section-left-write-up p {
+    padding: 5px 0;
+    margin: 0;
+}
+
+.second-section-left-write-up {
+    color: white;
+    position: relative;
+    bottom: 590px;
+    width: 50%;
+    font-size: 21px;
+    font-weight: bolder;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    /* border: 4px solid green; */
+    padding: 0px 11px;
+
 }
 
 .second-section-center {
@@ -403,6 +445,42 @@ body {
     box-shadow: 12px 9px 14px 8px rgba(204, 204, 204, 0.72);
     -webkit-box-shadow: 12px 9px 14px 8px rgba(204, 204, 204, 0.72);
     -moz-box-shadow: 12px 9px 14px 8px rgba(204, 204, 204, 0.72);
+}
+
+.second-section-right-top-write-up p {
+    padding: 10px 0;
+    margin: 0;
+}
+
+.second-section-right-top-write-up {
+    /* border: 4px solid green; */
+    position: relative;
+    bottom: 688px;
+    color: white;
+    width: 50%;
+    font-size: 22px;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    /* border: 4px solid green; */
+    padding: 6px 20px;
+}
+
+.second-section-right-bottom-write-up p {
+    padding: 10px 0;
+    margin: 0;
+}
+
+.second-section-right-bottom-write-up {
+    /* border: 4px solid green; */
+    position: relative;
+    bottom: 580px;
+    color: black;
+    width: 50%;
+    font-size: 22px;
+    /* float: right; */
+    font-family: 'Courier New', Courier, monospace;
+    /* border: 4px solid green; */
+    padding: 6px 20px;
 }
 
 .second-section-right-bottom {
