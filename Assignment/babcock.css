@@ -604,8 +604,9 @@ margin-bottom: 50px;
 
  
     .banner .write-up p {
-        color: white;
-        padding: 0 27px;
+        color: black;
+        font-weight: bolder;
+        padding: 0 20px;
         font-size: 26px;
     }
 
