@@ -628,7 +628,7 @@ p {
         height: 100vh;
         position: fixed;
         top: 90px;
-        left: 135px;
+        left:0;
         right: 0;
         text-align: center;
         background-color: black;
