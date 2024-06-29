@@ -673,6 +673,7 @@ p {
             left: 0px;
             color: rgb(138, 135, 135);
             text-align: left;
+            border-radius: 50%;
         }
 
     }
