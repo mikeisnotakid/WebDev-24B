@@ -6,11 +6,11 @@
 .poppins-thin {
     font-family: "Poppins", sans-serif;
 
-   
-  }
-  
 
-  
+}
+
+
+
 
 
 body {
@@ -631,36 +631,42 @@ p {
         color: rgb(202, 255, 202);
         /* background-color:  #9b9292; */
         font-weight: bolder;
-     text-align: center;
+        text-align: center;
         font-size: 26px;
     }
 
-    .nav-dropdown-div{
+    .nav-dropdown-div {
         display: none;
-        height: 100vh;
+        height: 70vh;
         position: fixed;
         top: 90px;
-        left:0;
+        left: 0;
         right: 0;
-        text-align: center;
         background-color: black;
         color: white;
         z-index: 20;
     }
 
-    .nav-dropdown-div ul li{
+    ul{
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-dropdown-div ul li {
         height: 70px;
-   
+        padding: 20px 0;
+        text-align: center;
         font-size: 25px;
         list-style: none;
     }
-    .nav-dropdown-div ul li:hover{
+
+    .nav-dropdown-div ul li:hover {
         background-color: white;
-       
+
         color: black;
     }
 
-  
+
 
 
 }
