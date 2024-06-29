@@ -637,7 +637,7 @@ p {
 
     .nav-dropdown-div {
         display: none;
-        height: 70vh;
+        height: 100vh;
         position: fixed;
         top: 90px;
         left: 0;
