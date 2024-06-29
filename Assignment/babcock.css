@@ -638,35 +638,35 @@ p {
 
     .nav-dropdown-div {
         display: none;
-        height: 100vh;
         position: fixed;
-        top: 90px;
+        height: 100%;
+        width: 100%;
+        top: 0px;
         left: 0;
-        right: 0;
         background-color: black;
         color: white;
         animation-name: dropdown-div;
         animation-duration: 1s;
-        position: relative;
-       
+      
+
     }
 
     @keyframes dropdown-div {
         from {
-       
+
             top: 400px;
 
         }
 
         to {
             top: 0px;
-          
+
 
         }
 
     }
 
-    ul{
+    ul {
         padding: 0;
         margin: 0;
     }
@@ -675,6 +675,7 @@ p {
         height: 70px;
         padding: 20px 0;
         text-align: center;
+
         font-size: 25px;
         list-style: none;
     }
