@@ -540,7 +540,7 @@ p {
 
     .nav-bar {
         height: 90px;
-      
+
         z-index: 50;
     }
 
@@ -641,28 +641,37 @@ p {
         position: fixed;
         height: 100%;
         width: 100%;
-        top: 0px;
+        top: 0;
         left: 0;
         margin-top: 90px;
         background-color: black;
         color: white;
         animation-name: dropdown-div;
         animation-duration: 1s;
-      
+
 
     }
 
     @keyframes dropdown-div {
-        from {
-
-            top: 300px;
+        10% {
+           
+          
+            height: 10px;
+            width: 10px;
+            border-radius: 5px;
 
         }
 
-        to {
-            top: 0px;
 
+      
+        50% {
+          
+            left: 400px;
+            border-radius: 50%;
+        }
 
+        100% {
+            left: 0px;
         }
 
     }
@@ -676,7 +685,7 @@ p {
         height: 70px;
         padding: 20px 0;
         text-align: center;
-   
+
         font-size: 25px;
         list-style: none;
     }
@@ -686,6 +695,9 @@ p {
 
         color: black;
     }
+
+
+
 
 
 
