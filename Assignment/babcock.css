@@ -1,6 +1,17 @@
 * {
     box-sizing: border-box;
+
 }
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+
+   
+  }
+  
+
+  
+
 
 body {
     margin: 0;
@@ -99,7 +110,7 @@ body {
     float: left;
     width: 12.5%;
     /* border: 4px solid black; */
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bolder;
     padding: 15px 2px;
     list-style: none;
@@ -617,10 +628,10 @@ p {
 
 
     .banner .write-up p {
-        color: rgb(96, 93, 93);
+        color: black;
         /* background-color:  #9b9292; */
         font-weight: bolder;
-        padding: 0 20px;
+     padding: 0px 10px;
         font-size: 26px;
     }
 
