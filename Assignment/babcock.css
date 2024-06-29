@@ -670,10 +670,10 @@ p {
       
 
         100% {
-            left: 0px;
+            left: 00px;
             color: rgb(138, 135, 135);
             text-align: left;
-            border-radius: 50%;
+            border-radius: 20%;
         }
 
     }
