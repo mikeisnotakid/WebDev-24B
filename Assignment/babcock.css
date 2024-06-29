@@ -541,6 +541,7 @@ p {
     .nav-bar {
         height: 90px;
         margin-bottom: 0;
+        z-index: 50;
     }
 
 
@@ -644,7 +645,25 @@ p {
         right: 0;
         background-color: black;
         color: white;
-        z-index: 20;
+        animation-name: dropdown-div;
+        animation-duration: 2s;
+        position: relative;
+       
+    }
+
+    @keyframes dropdown-div {
+        from {
+       
+            left: 400px;
+
+        }
+
+        to {
+            left: 30px;
+          
+
+        }
+
     }
 
     ul{
