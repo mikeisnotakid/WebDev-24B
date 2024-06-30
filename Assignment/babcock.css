@@ -662,15 +662,19 @@ p {
             background-color: #ccc;
             color: rgb(138, 135, 135);
             top: 200px;
+            transform: rotate(-80deg);
             text-align: left;
+            
 
         }
+
+
 
 
       
 
         100% {
-            left: 00px;
+            left: 0px;
             color: rgb(138, 135, 135);
             text-align: left;
             border-radius: 20%;
