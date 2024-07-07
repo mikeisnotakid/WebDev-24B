@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Grid view styling */
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+
+.left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border: 4px solid white;
+    float: left;
+    padding: 10px 10px;
+
+
+}
+
+.left .child {
+    height: 100%;
+    border: 4px solid red;
+}
+
+.left .child .div ul {
+    margin: 0;
+    padding: 0;
+}
+
+.left .child .div ul li {
+    padding: 20px 10px;
+    list-style: none;
+}
+
+
+
+.center {
+    height: 10000px;
+    border: 4px solid white;
+    float: left;
+    margin-left: 16.6%;
+    padding: 10px 10px;
+}
+
+.center .child {
+    height: 100%;
+    /* border: 4px solid green; */
+}
+
+.center .child .top {
+    height: 150px;
+    /* border: 4px solid yellow; */
+    white-space: nowrap;
+
+}
+
+.center .child .top .child {
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+}
+
+.center .child .top .child div {
+    height: 90px;
+    width: 90px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 45px;
+
+
+
+}
+
+.center .child .top .child div img {
+    height: 100%;
+    width: 100%;
+    border-radius: 45px;
+}
+
+.center .child .top .child div p {
+    text-align: center;
+}
+
+.center .child .body {
+    height: 100%;
+    /* border: 4px solid purple; */
+    padding: 0 10%;
+}
+
+.post-container {
+    height: 700px;
+    /* border: 4px solid orangered; */
+    margin: 30px 0;
+}
+
+.post-container .head {
+    height: 10%;
+    /* border: 4px solid lime; */
+}
+
+.fa-check-circle {
+    color: blue;
+}
+
+.head-write-up img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    float: left;
+
+}
+
+.head-write-up p {
+    float: left;
+    padding: 20px 10px;
+}
+
+.post-container .middle {
+    height: 70%;
+    /* border: 4px solid purple; */
+}
+
+.post-container .middle img {
+    height: 100%;
+    width: 100%;
+}
+
+.post-container .bottom {
+    height: 20%;
+    /* border: 4px solid white; */
+}
+
+.post-container .bottom .bottom-write-up {
+    padding: 20px 0;
+
+}
+
+
+
+
+
+.right {
+    height: 700px;
+    border: 4px solid white;
+    float: left;
+}
