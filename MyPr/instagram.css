@@ -116,6 +116,11 @@ body {
     overflow-x: scroll;
     scrollbar-width: none;
 
+
+}
+
+.center .child .top .child ::-webkit-scrollbar{
+    width: 0;
 }
 
 .center .child .top .child div {
