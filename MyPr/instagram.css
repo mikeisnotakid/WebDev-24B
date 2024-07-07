@@ -120,7 +120,7 @@ body {
 }
 
 .center .child .top .child ::-webkit-scrollbar{
-    width: 0;
+    width: none;
 }
 
 .center .child .top .child div {
