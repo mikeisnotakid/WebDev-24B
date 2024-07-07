@@ -115,13 +115,12 @@ body {
 .center .child .top .child {
     overflow-x: scroll;
     scrollbar-width: none;
+    scroll-behavior: smooth;
+    scrollbar-color: black black;
 
 
 }
 
-.center .child .top .child ::-webkit-scrollbar{
-    width: none;
-}
 
 .center .child .top .child div {
     height: 90px;
