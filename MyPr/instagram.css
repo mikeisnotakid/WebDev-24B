@@ -184,7 +184,7 @@ body {
 .post-container .middle img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+   
 }
 
 .post-container .bottom {
@@ -383,9 +383,15 @@ body {
     }
     .center {
         margin-left: 0;
+        
 
 
 
+    }
+
+    .center .child .body {
+ 
+        padding: 0 0;
     }
     .left{
         display: none;
