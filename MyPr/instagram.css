@@ -114,9 +114,8 @@ body {
 
 .center .child .top .child {
     overflow-x: scroll;
-    
+    scrollbar-width: none;
     scroll-behavior: smooth;
-    scrollbar-color: black black;
 
 
 }
