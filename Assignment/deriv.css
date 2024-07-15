@@ -322,6 +322,7 @@ p {
     0% {
         background-image: url('images/ai-generated-8491316_1920.png');
     }
+
     10% {
         background-image: url('images/ai-generated-8491316_1920.png');
     }
@@ -339,8 +340,12 @@ p {
 
     }
 
-    100% {
+    80% {
         background-image: url('images/stock-1863880_1920.jpg');
+    }
+
+    100% {
+        background-image: url('images/ai-generated-8491316_1920.png');
     }
 }
 

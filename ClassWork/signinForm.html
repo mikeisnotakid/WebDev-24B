@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <style>
+        .fa-regular {
+            position: relative;
+            right: 30px;
+        }
+
+        .fa-regular {
+            font-size: 10px;
+
+        }
+
+        .fa-eye-slash {
+            position: relative;
+            right: 40px;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <input type="password" name="MyPassword" id="MYpassword" placeholder="Enter Password">
+
+        <i onclick="display()" class="fa-regular fa-eye"></i>
+        <i onclick="display2()" class="fa-regular fa-eye-slash"></i>
+    </form>
+
+    <script src="https://kit.fontawesome.com/813b700df1.js" crossorigin="anonymous"></script>
+
+    <script>
+        function display() {
+            document.getElementById('MYpassword').type = 'text'
+            document.querySelector('.fa-eye-slash').style.visibility = 'visible'
+            document.querySelector('.fa-eye').style.visibility = 'hidden'
+
+        }
+
+        function display2() {
+            document.getElementById('MYpassword').type = 'password'
+            document.querySelector('.fa-eye-slash').style.visibility = 'hidden'
+            document.querySelector('.fa-eye').style.visibility = 'visible'
+        }
+    </script>
+</body>
+
+</html>
