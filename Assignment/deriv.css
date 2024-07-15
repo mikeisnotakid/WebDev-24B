@@ -319,6 +319,9 @@ p {
 }
 
 @keyframes BannerrBg {
+    0% {
+        background-image: url('images/ai-generated-8491316_1920.png');
+    }
     10% {
         background-image: url('images/ai-generated-8491316_1920.png');
     }
