@@ -318,6 +318,29 @@ p {
 
 }
 
+@keyframes BannerrBg {
+    10% {
+        background-image: url('images/ai-generated-8491316_1920.png');
+    }
+
+    20% {
+        background-image: url('images/chart-1905224_1920.jpg');
+    }
+
+    30% {
+        background-image: url('images/stock-trading-6525083_1920.jpg');
+    }
+
+    50% {
+        background-image: url('images/entrepreneur-2411763_1920.jpg');
+
+    }
+
+    100% {
+        background-image: url('images/stock-1863880_1920.jpg');
+    }
+}
+
 
 /* Banner Styling */
 
@@ -329,6 +352,10 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    animation-name: BannerrBg;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+
 }
 
 .banner-section::before {
