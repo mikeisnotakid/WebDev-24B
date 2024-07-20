@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<body>
+
+
+		<p id="p"></p>
+
+		<input type="" placeholder="name" id="input">
+		<br>
+		<button onclick="getName()">Click</button>
+
+
+
+		<button onclick="demo('boss', '59')" >Press it</button>
+
+	</body>
+
+	<script type="text/javascript">
+
+
+		function getName(){
+
+			var name = document.getElementById('input').value
+			console.log('Welcome mr '+name) 
+
+			document.getElementById('p').innerHTML = 'Welcome mr '+name 
+		}
+
+
+
+
+
+
+
+
+
+		
+		// display();
+		function display(){
+			
+			var name = 'Boss';
+
+			var text = 'My name is '+name;
+
+			console.log(text);
+
+		}
+
+
+
+
+
+
+
+
+		// demo('boss') 
+
+function demo(name, age){
+
+	console.log('my name is '+name +', i am '+age+' years old.')
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</html>

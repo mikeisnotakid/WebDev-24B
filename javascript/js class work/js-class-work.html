@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Enter your age" id="InputResult">
+    <button onclick="CheckAge()">Check Age</button>
+
+
+    <script>
+        function CheckAge() {
+            var AgeValue = document.getElementById('InputResult').value;
+            if (AgeValue >= 18) {
+
+                alert('Welcome')
+            } else if (AgeValue >= 65) {
+                alert('too old')
+            } else {
+                alert('Minors are not allowed')
+            }
+        }
+    </script>
+</body>
+
+</html>

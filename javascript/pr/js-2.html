@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="onlyh1">Enter your name</h1>
+    <form action="#">
+        <input type="text" id="EnterName">
+    </form>
+    <button onclick="SubmitRst()">Submit</button>
+    <button onclick="ClearBtn()">Clear</button>
+
+
+    <script>
+        var InputV = document.getElementById('EnterName');
+        function SubmitRst() {
+
+
+            document.getElementById('onlyh1').innerHTML = ('Welcome ' + InputV.value)
+
+        }
+
+        function ClearBtn() {
+            InputV.value = ' '
+            document.getElementById('onlyh1').innerHTML = ' '
+        }
+
+    </script>
+</body>
+
+</html>

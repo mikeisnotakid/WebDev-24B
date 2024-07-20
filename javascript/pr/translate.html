@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 150px;
+            background-color: green;
+            animation-name: moveContainer;
+            animation-duration: 3s;
+            
+           
+        }
+
+        @keyframes moveContainer {
+            10%{
+                transform: translateX(-10%);
+                transform: rotate(40deg);
+            }
+
+            50%{
+                transform: translateX(-50%);
+                transform: rotate(-50deg);
+            }
+
+            100%{
+                transform: translateX(-70%);
+                
+            }
+
+            
+        }
+
+        body{
+            height: 100000px;
+        }
+    </style>
+</head>
+<body ondblclick="DisplayBody()">
+    <div class="container">
+
+    </div>
+
+
+    <script>
+    function DisplayBody() {
+        document.body.style.backgroundColor = 'red'
+    }
+    </script>
+</body>
+</html>

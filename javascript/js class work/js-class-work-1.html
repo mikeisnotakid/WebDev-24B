@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="displayName"></h1>
+    <label>Enter your name</label>    
+    <input type="text" id="InputResult">
+    <button onclick="showRst()">Submit</button>
+
+    <script>
+        var InputResult = document.getElementById('InputResult');
+        var h1Display = document.getElementById('displayName');
+
+        function showRst() {
+            h1Display.innerHTML = ('Welcome ' + InputResult.value)
+        }
+    </script>
+</body>
+
+</html>
