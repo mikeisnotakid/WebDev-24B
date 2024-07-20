@@ -25,12 +25,15 @@
             position: fixed;
             left: 0;
             right: 0;
-            /* height: 100vh; */
-            background-color: red;
+            height: 100vh;
+            background-color: black;
             display: none;
             text-align: center;
             z-index: 100;
         }
+        /* .cover-screen .child h1{
+            font-size: 20px;
+        } */
 
         .game-container {
             margin: auto;
@@ -196,6 +199,7 @@
 
         function GiftCoin1() {
             DisplayTaps.innerHTML = 100000 + 'Mike Coin';
+            DisplayTaps.style.fontSize = '20px'
             CoverScreen.style.display = 'none'
             document.getElementById('ThirdBtn').style.display = 'block'
             document.getElementById('FirstBtn').style.display = 'none'
@@ -204,6 +208,7 @@
 
         function ContinueTapping() {
             DisplayTaps.innerHTML = 100000;
+              DisplayTaps.style.fontSize = '90px'
             document.getElementById('ThirdBtn').style.display = 'none'
             document.getElementById('FirstBtn').style.display = 'block'
             document.getElementById('SecondBtn').style.display = 'none'
