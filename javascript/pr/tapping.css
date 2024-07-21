@@ -308,6 +308,12 @@ form .SignUpBTn{
         height: 60px;
       
     }
+    form input, form button:focus{
+        padding: 0;
+        margin: 0;
+    }
+
+
 
    
    
