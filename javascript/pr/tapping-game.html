@@ -5,143 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color: rgb(19, 17, 16);
-            height: 800px;
-            color: white;
-            background-image: url('./images/robot-8839229_1920.jpg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-        }
-
-        .cover-screen .child {
-            position: fixed;
-            left: 0;
-            right: 0;
-            height: 100vh;
-            background-color: black;
-            display: none;
-            text-align: center;
-            z-index: 100;
-        }
-        /* .cover-screen .child h1{
-            font-size: 20px;
-        } */
-
-        .game-container {
-            margin: auto;
-            /* width: 50%; */
-            /* height:100vh; */
-            
-            /* border: 4px solid red; */
-        }
-
-        #DisplayTap {
-            height: 30%;
-            width: 100%;
-            text-align: center;
-            font-size: 90px;
-            font-weight: bolder;
-            padding: 30px 0;
-            /* background-color: rgb(255, 255, 255); */
-          
-
-        }
-
-        p {
-            text-align: center;
-            position: relative;
-     
-            height: 80px;
-            bottom: 170px;
-            /* left: 304px; */
-        }
-
-        #FirstBtn, #SecondBtn, #ThirdBtn button {
-            display: block;
-            margin: auto;
-            height: 400px;
-            width: 400px;
-            margin-top: 10px;
-            font-size: 23px;
-            border-radius: 200px;
-            border: none;
-            background:none;
-            /* animation-name: MoveTapbuttons; */
-            animation-duration: 2s;
-            background-image: url('https://cdn2.iconfinder.com/data/icons/crypto-badge/512/Solana_SOL_Badge.png');
-            background-repeat: no-repeat;
-            background-position: center;
-           background-size:  cover;
-            animation-iteration-count: infinite;
-
-        }
-
-        @keyframes MoveTapbuttons {
-            10% {
-                transform: translateX(20px);
-            }
-
-            50% {
-                transform: translateY(20px);
-            }
-
-            100% {
-                transform: translateZ(20px);
-            }
-        }
-
-        #ThirdBtn {
-            display: none;
-           
-            margin: auto;
-            height: 400px;
-            width: 400px;
-            margin-top: 10px;
-            font-size: 23px;
-            border-radius: 200px;
-            border: none;
-            background:none;
-            /* animation-name: MoveTapbuttons; */
-            animation-duration: 2s;
-            background-image: url('https://cdn2.iconfinder.com/data/icons/crypto-badge/512/Solana_SOL_Badge.png');
-            background-repeat: no-repeat;
-            background-position: center;
-           background-size:  cover;
-            animation-iteration-count: infinite;
-
-        }
-
-        #SecondBtn {
-            display: none;
-        }
-
-        #CollectCoin {
-            height: 100px;
-            width: 50%;
-            background-color: green;
-            color: white;
-            font-size: 30px;
-            border: none;
-         
-        }
-
-        .child h1 {
-            height: 20%;
-            padding: 40px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="tapping.css">
 </head>
 
 <body>
+    <div class="pop-up-alert">
+        <div class="child">
 
+            <div class="pop-up-alert-content">
+                <h1>Welcome to Mike Coin </h1>
+
+                <h4 class="h4alert"></h4>
+            </div>
+
+            <form action="#">
+                <button onclick="LoginBtnDisplay()">Login</button>
+                <button class="SignUpBTn" onclick="SignUpBtnDisplay()">Signup</button>
+
+                <input type="text" placeholder="Username" id="GetUserName">
+                <input type="password" placeholder="Password">
+                <h6 style="color: rgb(255, 91, 91);">Forgot password ?</h6>
+                <button class="login-btn" onclick="PerformLogin()">Login</button>
+                <h4>Not a member ? <span style="color: rgb(255, 91, 91);">Signup now</span> </h4>
+            </form>
+        </div>
+    </div>
     <div class="cover-screen">
         <div class="child">
             <h1>You got 100000 Mike Coin </h1>
@@ -150,11 +38,11 @@
     </div>
 
     <div class="game-container">
-     
+
         <!-- <input type="text" > -->
-         <!-- <h1>Welcome to Mike Tap</h1> -->
-        <h2 id="DisplayTap" >0</h2>
-      
+        <h1 class="H1Display"></h1>
+        <h2 id="DisplayTap">0</h2>
+
         <button id="FirstBtn" onclick="AddToDisplayTap()">Tap</button>
         <button id="SecondBtn" onclick="AddToDisplayBy3()">X3 Tap</button>
         <button id="ThirdBtn" onclick="ContinueTapping()">Continue Tapping</button>
@@ -162,67 +50,7 @@
 
 
 
-
-    <script>
-
-        var DisplayTaps = document.getElementById('DisplayTap');
-        var CoverScreen = document.querySelector('.cover-screen .child');
-
-
-
-        function AddToDisplayTap() {
-            for (var i = 0; i < 1; i++) {
-                DisplayTaps.innerHTML++;
-            }
-            if (DisplayTaps.innerHTML > 10) {
-                document.getElementById('SecondBtn').style.display = 'block'
-                document.getElementById('FirstBtn').style.display = 'none'
-            }
-
-
-            if (DisplayTaps.innerHTML > 100000) {
-                document.getElementById('SecondBtn').style.display = 'none'
-                document.getElementById('FirstBtn').style.display = 'block'
-            }
-            document.getElementById('FirstBtn').style.animation = 'MoveTapbuttons 0.5s  infinite'
-
-        }
-
-        function AddToDisplayBy3() {
-
-            for (var i = 0; i < 1; i++) {
-                DisplayTaps.innerHTML *= 3;
-            }
-
-            if (DisplayTaps.innerHTML >= 500) {
-                CoverScreen.style.display = 'block'
-
-            }
-        }
-
-        function GiftCoin1() {
-            DisplayTaps.innerHTML = 'You got ' + 100000 + 'Mike Coin';
-            DisplayTaps.style.fontSize = '30px'
-            CoverScreen.style.display = 'none'
-            document.getElementById('ThirdBtn').style.display = 'block'
-            document.getElementById('FirstBtn').style.display = 'none'
-            document.getElementById('SecondBtn').style.display = 'none'
-        }
-
-        function ContinueTapping() {
-            DisplayTaps.innerHTML = 100000;
-              DisplayTaps.style.fontSize = '90px'
-            document.getElementById('ThirdBtn').style.display = 'none'
-            document.getElementById('FirstBtn').style.display = 'block'
-            document.getElementById('SecondBtn').style.display = 'none'
-
-
-            // if (DisplayTaps.value >= 50001) {
-            //     CoverScreen.style.display = 'none'
-
-            // }
-        }
-    </script>
+    <script src="tapping.js"></script>
 </body>
 
 </html>
