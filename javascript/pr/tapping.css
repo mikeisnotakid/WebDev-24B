@@ -303,5 +303,11 @@ form .SignUpBTn{
         
     }
 
+    form input, form button{
+        height: 60px;
+      
+    }
+
+   
    
 }
