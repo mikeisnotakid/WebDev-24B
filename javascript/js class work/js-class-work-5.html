@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        .container {
+            height: 300px;
+            width: 30%;
+            margin: auto;
+            /* border: 4px solid green; */
+            padding: 20px 10px;
+        }
+
+        .head {
+            height: 100px;
+            border-radius: 10px;
+            box-shadow: #ccc 3px 3px 3px 3px;
+            outline: 4px solid gray;
+            margin-bottom: 20px;
+            /* border: 4px solid purple; */
+
+        }
+
+        .head .left,
+        .head .right {
+            float: left;
+            /* border: 4px solid red; */
+            width: 80%;
+        }
+
+        .head .left {
+            width: 20%;
+            border-radius: 100%;
+
+        }
+
+        .head .left .img-container {
+            height: 60px;
+            width: 60px;
+            /* border: 4px solid green; */
+            border-radius: 100%;
+
+        }
+
+        .head .left img {
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            border: 4px solid blue;
+            border-radius: 100%;
+
+
+
+        }
+
+        .head .right h3 {
+            padding: 0 40px;
+            font-weight: bolder;
+            font-size: 25px;
+            text-transform: capitalize;
+        }
+
+        .body {
+            height: 60%;
+            background-color: white;
+            border: 4px solid blue;
+            border-radius: 10px;
+            color: black;
+            box-shadow: rgb(123, 122, 122) 3px 3px 3px 3px;
+            text-align: center;
+            padding: 20px 10px;
+            /* animation-name: MoveBody;
+            animation-duration: 2s;
+            animation-delay: 1s; */
+
+        }
+
+        .body p {
+            font-size: 17px;
+            font-weight: bolder;
+        }
+
+
+
+        @keyframes MoveBody {
+            10% {
+                transform: translateX(10px);
+            }
+
+            50% {
+                transform: translateX(20px);
+            }
+
+            100% {
+                transform: translateX(50px);
+            }
+
+
+        }
+
+        .form-container {
+            height: 350px;
+            /* border: 4px solid red; */
+            width: 30%;
+            margin: auto;
+        }
+
+        .form-container input,
+        textarea {
+            display: block;
+            height: 60px;
+            margin-top: 10px;
+            /* border: 4px solid white; */
+            border-radius: 20px;
+            width: 100%;
+        }
+
+        .form-container input,
+        textarea,
+        ::placeholder {
+            font-size: 25px;
+            padding: 10px 10px;
+            color: black;
+        }
+
+        @keyframes MoveInputORTextArea {
+            10% {
+                transform: translateX(-10px);
+            }
+
+            50% {
+                transform: translateX(-15px);
+            }
+
+            100% {
+                transform: translateX(-30px);
+            }
+
+
+        }
+
+        .form-container input:focus {
+            height: 80px;
+            outline: 4px solid blue;
+            /* animation-name: MoveInputORTextArea;
+            animation-duration: 2s; */
+
+        }
+
+        .form-container textarea:focus {
+            height: 140px;
+            outline: 4px solid blue;
+            /* animation-name: MoveInputORTextArea;
+            animation-duration: 2s; */
+
+
+        }
+
+
+
+        .form-container textarea {
+            height: 120px;
+        }
+
+        .form-container button {
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            height: 40px;
+            width: 120px;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: bolder;
+            border: none;
+            box-shadow: gray 3px 3px 3px 3px;
+        }
+
+        .form-container button:hover {
+            height: 50px;
+            width: 150px;
+            outline: 4px solid blue;
+            box-shadow: white 3px 3px 3px 3px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <input type="text" placeholder="Name" id="NameValue">
+        <input type="text" placeholder="Gender" id="GenderValue">
+        <textarea id="TextareaValue" placeholder="Whats on your mind?"></textarea>
+        <button id="Btn" onclick="PrintToInnerHtml()">Post</button>
+    </div>
+
+
+    <div class="container">
+        <div class="head">
+            <div class="left">
+                <img id="ProfilePicsChange" src="../images/capra-8535002_1920-removebg-preview.png">
+            </div>
+            <div class="right">
+                <h3 id="NameDisplay">Mr/Mrs</h3>
+            </div>
+        </div>
+        <div class="body">
+            <p id="BodyPchange">Say something </p>
+        </div>
+    </div>
+
+
+    <script>
+        var NameValue = document.getElementById('NameValue');
+        var GenderValue = document.getElementById('GenderValue');
+        var TextAreaValue = document.getElementById('TextareaValue');
+
+        var NameDisplay = document.getElementById('NameDisplay');
+        var ProfileChange = document.getElementById('ProfilePicsChange');
+        var BodyPChange = document.getElementById('BodyPchange');
+
+
+
+        function PrintToInnerHtml() {
+            document.querySelector('.head').style.animation = 'MoveBody 0.5s'
+            document.querySelector('.body').style.animation = 'MoveBody 0.5s 1s'
+
+            NameDisplay.innerHTML = NameValue.value;
+            BodyPChange.innerHTML = TextAreaValue.value;
+            if (GenderValue.value === 'Male' || GenderValue.value === 'male') {
+                ProfileChange.src = "../images/cartoon-1890438_1920-removebg-preview.png"
+                NameValue.style.outline = "4px solid blue"
+                GenderValue.style.outline = "4px solid blue"
+                TextAreaValue.style.outline = "4px solid blue"
+                document.getElementById('Btn').style.outline = "4px solid blue"
+                NameValue.style.animation = 'MoveInputORTextArea 0.5s'
+                GenderValue.style.animation = 'MoveInputORTextArea 0.8s'
+                TextAreaValue.style.animation = 'MoveInputORTextArea 0.5s 1s'
+
+
+            }
+            else if (GenderValue.value === 'Female' || GenderValue.value === 'female') {
+                ProfileChange.src = "../images/istockphoto-2143268115-2048x2048-removebg-preview.png"
+                NameValue.style.outline = "4px solid blue"
+                GenderValue.style.outline = "4px solid blue"
+                TextAreaValue.style.outline = "4px solid blue"
+                document.getElementById('Btn').style.outline = "4px solid blue"
+                NameValue.style.animation = 'MoveInputORTextArea 0.5s'
+                GenderValue.style.animation = 'MoveInputORTextArea 0.8s'
+                TextAreaValue.style.animation = 'MoveInputORTextArea 0.5s 1s'
+
+
+            } else {
+                ProfileChange.src = "../images/capra-8535002_1920-removebg-preview.png"
+                NameDisplay.innerHTML = 'Hey all filed is required';
+                BodyPChange.innerHTML = 'Check all filed and make sure your details are entered correctly, GENDER FILED MOST BE Male Or Female no others.';
+                NameValue.style.outline = "4px solid red"
+                GenderValue.style.outline = "4px solid red"
+                TextAreaValue.style.outline = "4px solid red"
+                document.getElementById('Btn').style.outline = "4px solid red"
+                NameValue.style.animation = 'MoveInputORTextArea 0.5s'
+                GenderValue.style.animation = 'MoveInputORTextArea 0.8s'
+                TextAreaValue.style.animation = 'MoveInputORTextArea 0.5s 1s'
+
+
+            }
+
+
+
+        }
+    </script>
+</body>
+
+</html>

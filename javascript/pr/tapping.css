@@ -4,13 +4,13 @@
 }
 
 body {
-    background-color: rgb(19, 17, 16);
-  height: 100vh;
-    color: white;
-    background-image: url('./images/robot-8839229_1920.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+  
+
+
+
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
 
 }
@@ -164,6 +164,8 @@ p {
     padding: 40px 0;
 }
 
+/* kafhsduligjkflasdigufbvc */
+
 .pop-up-alert{
     /* border: 4px solid green; */
     height: 800px;
@@ -172,7 +174,7 @@ p {
     right: 0;
     z-index: 200;
     padding: 2% 10%;
-    /* display: none; */
+    display: none;
 
 }
 
@@ -308,10 +310,7 @@ form .SignUpBTn{
         height: 60px;
       
     }
-    form input, form button:focus{
-        padding: 0;
-        margin: 0;
-    }
+   
 
 
 

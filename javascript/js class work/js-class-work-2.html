@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<input type="password" id="pword">
+
+	<button onclick="viewPassword()" id="btn">view</button>
+
+</body>
+
+	<script type="text/javascript">
+		
+		function viewPassword() {
+
+			var inputType = document.getElementById('pword').type
+
+			if (inputType == 'password') {
+
+			document.getElementById('pword').type = 'text'
+
+			document.getElementById('btn').innerHTML = 'hide'
+
+			}else{
+
+				document.getElementById('pword').type = 'password'
+
+				document.getElementById('btn').innerHTML = 'view'
+
+			}	
+		}
+
+	</script>
+
+</html>
