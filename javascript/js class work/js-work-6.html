@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="DisplayAverage"></h1>
+    <input type="text" id="InputVal1">
+    <input type="text" id="InputVal2">
+    <input type="text" id="InputVal3">
+    <input type="text" id="InputVal4">
+
+    <button onclick="CheckNumbers()">Average</button>
+
+
+    <script>
+
+        function CheckNumbers() {
+            var InputVal1 = Number(document.getElementById('InputVal1').value)
+            var InputVal2 = Number(document.getElementById('InputVal2').value)
+            var InputVal3 = Number(document.getElementById('InputVal3').value)
+            var InputVal4 = Number(document.getElementById('InputVal4').value)
+            var DisplayAv = document.getElementById('DisplayAverage');
+
+            var AverageNum = InputVal1 + InputVal2 + InputVal3 + InputVal4;
+            // var AverageNum = Number;
+            var Calculate = AverageNum / 4;
+            DisplayAv.innerHTML = Calculate;
+ 
+        }
+
+
+
+    </script>
+</body>
+
+</html>

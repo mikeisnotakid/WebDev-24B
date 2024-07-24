@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            height: 60px;
+            width: 250px;
+            display: block;
+            margin: 50px 0;
+        }
+
+        #Btn {
+            height: 40px;
+            width: 150px;
+            border: none;
+            background-color: blue;
+            color: white;
+            display: none;
+            animation-name: MoveBtn;
+            animation-duration: 1s;
+
+        }
+
+        @keyframes MoveBtn {
+            10% {
+                transform: translateX(10px);
+            }
+
+            100% {
+                transform: translateX(30px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div onclick=CheckValues()>
+            <input type="text" placeholder="Email" id="EmailValue">
+            <input type="text" placeholder="Password" id="PassWordValue">
+            <button id="Btn">Submit</button>
+
+        </div>
+    </center>
+
+
+    <script>
+        var EmailValue = document.getElementById('EmailValue');
+        var PassWordValue = document.getElementById('PassWordValue');
+        var Btn = document.getElementById('Btn');
+
+
+
+
+        function CheckValues() {
+            if (EmailValue.value == 'boss@gmail.com' && PassWordValue.value == 'Aa0000000#') {
+                Btn.style.display = 'block'
+            } else {
+                Btn.style.display = 'none'
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
