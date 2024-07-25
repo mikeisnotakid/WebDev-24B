@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+
+		<style type="text/css">
+			
+			button{
+				display: none;
+			}
+		</style>
+
+
+	</head>
+	<body>
+
+
+
+		<center>
+			
+			<input onkeyup="login()" type="email" id="mail">
+			<br><br>
+			<input onkeyup="login()" type="password" id="pass">
+			<br><br>
+
+			<span style="color: red" id="mssg"></span>
+
+
+			<button id="btn" >Login</button>
+
+		</center>
+	</body>
+
+	<script type="text/javascript">
+		
+
+
+		function login(){
+
+			var email = document.getElementById('mail').value
+			var password = document.getElementById('pass').value
+
+
+			if (email != '' && password != '') {
+
+				if(email == 'boss@gmail.com' && password == 'Aa0000000#'){
+
+					document.getElementById('btn').style.display = 'block'
+
+
+					document.getElementById('mssg').style.color = 'green'
+					document.getElementById('mssg').innerHTML = 'correct login detail'
+
+
+
+				}else{
+					// alert('incorrect login details')
+
+					document.getElementById('mssg').innerHTML = 'incorrect login detail'
+					document.getElementById('mssg').style.color = 'red'
+
+
+				}
+			}
+
+
+
+
+
+
+
+		}
+
+
+
+
+	</script>
+</html>

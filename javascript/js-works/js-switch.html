@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="team" placeholder="Football Team">
+
+    <br><br>
+
+    <button onclick="checkTeam()">Check</button>
+
+    <script>
+        function checkTeam() {
+            var team = document.getElementById('team').value;
+            switch (team) {
+                case 'chelsea':
+                    alert('Blues')
+                    break;
+
+                case 'manU':
+                    alert('Red Devils')
+                    break;
+
+                case 'liverpool':
+                    alert('Never walk alone')
+                    break;
+
+                default:
+                    alert('your Team is not know')
+            }
+        }
+
+    </script>
+</body>
+
+</html>
