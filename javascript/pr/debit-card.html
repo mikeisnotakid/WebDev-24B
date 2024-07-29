@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="debit-card.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-container col-4">
+            <div class="left-container-top">
+                <div class="left-container-top-child">
+                    <div class="left-container-top-child-head">
+                        <h1>Visa</h1>
+                    </div>
+                    <div class="left-container-top-child-body">
+                        <p id="RecieveCardNumber">0000000000000000</p>
+                    </div>
+                    <div class="left-container-top-child-bottom">
+                        <div class="left-container-top-child-bottom-left">
+                            <p id="RecieveCardName">Mike Dev</p>
+                        </div>
+                        <div class="left-container-top-child-bottom-right">
+                            <p id="CardMM">00</p>
+                            <p>/</p>
+                            <p id="CardYY">00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="left-container-bottom">
+                <div class="left-container-bottom-child">
+                    <div class="left-container-bottom-child-top">
+                        <div class="left-container-bottom-child-top-main-child"></div>
+                    </div>
+                    <div class="left-container-bottom-child-bottom">
+                        <div class="left-container-bottom-child-bottom-main-child">
+                            <p id="RecieveCardCVC">000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="right-container col-8">
+
+            <div class="form-container col-6">
+                <input type="text" id="cardName" onkeyup="SendCardName()" placeholder="Enter Card Name">
+                <input type="text" id="cardNumber" onkeyup="SendCardNumber()" placeholder="Enter Card Number">
+                <div class="Exp-Cvc">
+
+                    <div class="ExpCvc-left col-6">
+                        <input type="text" id="MM" onkeyup="SendCardMM()" placeholder="MM">
+                        <input type="text" id="YY" onkeyup="SendCardYY()" placeholder="YY">
+                    </div>
+                    <div class="ExpCvc-right col-6">
+                        <input type="text" id="CVC" onkeyup="SendCardCVC()" placeholder="CVC">
+                    </div>
+
+                </div>
+
+                <button>Confirm</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="debit-card.js"></script>
+</body>
+
+</html>

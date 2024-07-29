@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            height: 120px;
+            width: 500px;
+            border-radius: 20px;
+            margin: 20px 0;
+            box-shadow: black 3px 3px 3px 3px;
+            border: 4px solid blue;
+            outline: none;
+            background-color: #ccc;
+            font-size: 25px
+        }
+
+        input:focus {
+            background-color: white;
+            /* border: 10px solid black; */
+        }
+
+        button {
+            height: 60px;
+            width: 180px;
+            margin: 20px 10px;
+            color: white;
+            border: none;
+            box-shadow: black 3px 3px 3px 3px;
+            font-size: 25px;
+            font-weight: bolder;
+            border-radius: 20px;
+            background-color: #ccc;
+
+
+        }
+
+        #FirstBtn:hover {
+            height: 70px;
+            width: 200px;
+            border-radius: 20px;
+        }
+
+        #SecondBtn:hover {
+            height: 70px;
+            width: 200px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <!-- <p id="Sacrificial"></p> -->
+        <input type="text" id="DisplayArr">
+        <br>
+        <button id="FirstBtn" onclick="TottalArray()" style="background-color: blue;">Total Array</button>
+        <button id="SecondBtn" onclick="AddToArray()" style="color: black; border: 4px solid blue;">Add Array</button>
+    </center>
+
+
+    <script>
+        var ArrStorage = []
+        var DisplayArray = document.getElementById('DisplayArr');
+        function AddToArray() {
+            ArrStorage.push(DisplayArray.value)
+            // document.getElementById('Sacrificial').innerHTML = ArrStorage;
+            DisplayArray.value = '';
+            DisplayArray.style.border = '4px solid black';
+        }
+
+        function TottalArray() {
+            if (ArrStorage == 0) {
+                DisplayArray.value = '';
+                DisplayArray.style.border = '4px solid red';
+
+
+            } else {
+                DisplayArray.value = ('Total Array is ' + ArrStorage);
+                DisplayArray.style.border = '10px solid green';
+                DisplayArray.style.backgroundColor = 'white';
+                document.getElementById('FirstBtn').style.backgroundColor = 'green';
+                document.getElementById('FirstBtn').style.border = '4px solid white';
+
+
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
