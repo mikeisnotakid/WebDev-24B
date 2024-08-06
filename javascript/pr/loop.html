@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #parent{
+            border: 4px solid green;
+            height: 200px;
+            width: 250px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+  <div id="parent"></div>
+    
+     <script>
+    
+
+// Get the parent element
+const parent = document.getElementById('parent');
+
+// Loop 50 times
+for (let i = 0; i < 50; i++) {
+  // Create a new div element
+  const div = document.createElement('div');
+  
+  // Set the div text content (optional)
+
+  
+  // Append the div to the parent
+  parent.appendChild(div);
+}
+
+
+
+
+
+for (let i = 0; i < 50; i++) {
+  parent.insertAdjacentHTML('beforeend', `<div>Div ${i + 1}</div>`);
+}
+
+
+    </script>
+</body>
+</html>

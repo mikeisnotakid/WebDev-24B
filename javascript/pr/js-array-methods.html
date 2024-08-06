@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <p id="DisplayP" class="fasfd"></p>
+        <button onclick="BtnFunc()">Remove</button>
+    </center>
+
+    <script>
+        var ArraySet = ['Red', 'Lime', 'gold', 'yellow', 'blue', 'pink'];
+        var DisplayP = document.getElementById('DisplayP').innerHTML = ArraySet.join(' ');
+        var Dakdjfal = document.querySelector('.fasfd');
+        function BtnFunc() {
+            var DisplayP = document.getElementById('DisplayP').innerHTML = ArraySet;
+            DisplayP.shift();
+            Dakdjfal.style.color = 'red'
+        }
+    </script>
+</body>
+
+</html>

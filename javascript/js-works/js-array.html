@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #alp {
+            padding: 10px;
+            width: 50px;
+            border: 4px solid black;
+            color: white;
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div id="alp">A</div>
+        <input type="text" id="InputVal">
+        <br>
+        <button onclick="Create()">Click</button>
+    </center>
+
+    <script>
+        var Colors = ['red', 'yellow', 'lime', 'green', 'orange', 'purple']
+        var VAlue = document.getElementById('InputVal');
+        var DisplayAlf = document.getElementById('alp');
+
+        function Create() {
+            switch (VAlue.value) {
+                case 'A':
+                    DisplayAlf.innerHTML = VAlue.value;
+                    DisplayAlf.style.backgroundColor = Colors[0];
+                    VAlue.value = ''
+                    break;
+
+                case 'B':
+                    DisplayAlf.innerHTML = VAlue.value;
+                    DisplayAlf.style.backgroundColor = Colors[1];
+                    VAlue.value = ''
+                    break;
+
+                case 'C':
+                    DisplayAlf.innerHTML = VAlue.value;
+                    DisplayAlf.style.backgroundColor = Colors[2];
+                    VAlue.value = ''
+                    break;
+
+
+                case 'D':
+                    DisplayAlf.innerHTML = VAlue.value;
+                    DisplayAlf.style.backgroundColor = Colors[3];
+                    VAlue.value = ''
+                    break;
+
+
+                case 'E':
+                    DisplayAlf.innerHTML = VAlue.value;
+                    DisplayAlf.style.backgroundColor = Colors[4];
+                    VAlue.value = ''
+                    break;
+
+                case 'F':
+                    DisplayAlf.innerHTML = VAlue.value;
+                    DisplayAlf.style.backgroundColor = Colors[5];
+                    VAlue.value = ''
+                    break;
+
+                default:
+                    DisplayAlf.innerHTML = "Enter letters from A-F";
+                    VAlue.value = ''
+            }
+        }
+    </script>
+</body>
+
+</html>
