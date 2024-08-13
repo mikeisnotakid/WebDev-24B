@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="NumV">
+    <button onclick="CheckNum()">Check Number</button>
+    <p id="pTag"></p>
+
+
+    <script>
+        function CheckNum() {
+
+            var NumV = document.getElementById('NumV').value;
+            var i = NumV;
+            var StoreOdd = 0;
+            var Count = 0;
+
+            while (i > 0) {
+                if (i % 2 != 0) {
+                    console.log(i);
+                    StoreOdd += i
+                    Count += i;
+
+                }
+                i--
+
+
+            }
+
+
+
+
+            document.getElementById('pTag').innerHTML = StoreOdd;
+        }
+
+
+
+    </script>
+</body>
+
+</html>

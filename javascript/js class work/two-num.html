@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        CountDown(10, 20)
+        function CountDown(Num1, Num2) {
+            if (Num1 > Num2) {
+                var i = Num1
+                while (i > Num2) {
+                    if (i % 2 != 0) {
+                        console.log(i)
+
+                    }
+
+                    i--
+                }
+            } else {
+                var i = Num2;
+                while (i > Num1) {
+                    if (i % 2 != 0) {
+                        console.log(i)
+                    }
+                    i--
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

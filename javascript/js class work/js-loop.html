@@ -12,22 +12,22 @@
         <input type="text" id="InputVAl" placeholder="Enter Number">
         <button onclick="CountDownBtn()">Count Down</button>
     </center>
-
+    
     <script>
         function CountDownBtn() {
             var INPUTvalue = document.getElementById('InputVAl').value;
-            var StoreInputVAlue = [];
+            var StoreInputVAlue = 0;
 
             var i = INPUTvalue;
             while (i > 0) {
                 console.log(i);
 
-                StoreInputVAlue.push(length += Number(i))
+                StoreInputVAlue += Number(i);
 
                 i--;
             }
 
-            console.log(  ('Total Sum is ') + StoreInputVAlue[StoreInputVAlue.length -1] );
+            console.log(('Total Sum is ') + StoreInputVAlue);
 
         }
 

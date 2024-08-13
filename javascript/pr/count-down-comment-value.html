@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            height: 300px;
+            width: 500px;
+            border-radius: 10px;
+            box-shadow: #ccc 5px 5px 5px 5px;
+            font-size: 30px;
+        }
+
+        #btn {
+            margin-top: 20px;
+            height: 70px;
+            width: 250px;
+            border-radius: 10px;
+            background-color: blue;
+            border: none;
+            color: white;
+            font-weight: bolder;
+            font-size: 30px;
+            box-shadow: #ccc 5px 5px 5px 5px;
+        }
+
+        #DisplayV {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <input type="text" placeholder="Enter Comment" oninput="PerformInputCal()" id="InputValue">
+        <br>
+        <a href="debit-card.html"><button id="btn" onclick="ReduceBtn()">Submit</button></a>
+        <p id="DisplayV"></p>
+    </center>
+
+
+
+    <script>
+        var CommentValue = document.getElementById('InputValue');
+        var DisplayV = document.getElementById('DisplayV');
+        var LimitValue = 20;
+        var Btn = document.getElementById('btn');
+
+
+        function PerformInputCal() {
+            var ReduceV = LimitValue - CommentValue.value.length
+            DisplayV.innerHTML = ('You have written ' + CommentValue.value.length + ' you have ' + ReduceV + ' letters Remaining');
+            if (CommentValue.value.length > 20) {
+
+                DisplayV.innerHTML = ('You have reached the limit of writing ')
+                DisplayV.style.color = 'red'
+                CommentValue.style.color = 'red'
+                CommentValue.style.border = '2px solid red'
+                CommentValue.value = CommentValue.value.slice(0, 20);
+                Btn.style.visibility = 'hidden'
+            } else {
+                CommentValue.style.color = 'black'
+                CommentValue.style.border = '2px solid black'
+                Btn.style.visibility = 'visible'
+                DisplayV.style.color = 'blue'
+            }
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

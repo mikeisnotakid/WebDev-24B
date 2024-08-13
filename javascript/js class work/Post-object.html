@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            height: 50px;
+            width: 50%;
+            padding: 0 20px;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        input::placeholder {
+            padding: 0 20px;
+            font-size: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            height: 50px;
+            width: 30%;
+            border-radius: 10px;
+            border: none;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+        }
+
+        #DisplayName,
+        #DisplayTitle,
+        #DisplayBody {
+            font-size: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <input type="text" placeholder="Name" id="NameValue">
+            <br>
+            <input type="text" placeholder="Post Title" id="PostTitleValue">
+            <br>
+            <input type="text" placeholder="Post body" id="PostBodyValue">
+            <br>
+            <button onclick="SubmitPost()">Post</button>
+        </div>
+
+        <!-- 
+        <div class="display-values">
+            <p id="DisplayName"></p>
+            <p id="DisplayTitle"></p>
+            <p id="DisplayBody"></p>
+        </div> -->
+
+        <div id="Post-Container" style="height: 250px; overflow: auto;">
+
+        </div>
+
+    </center>
+    <script>
+        var NameValue = document.getElementById('NameValue');
+        var PostTitleValue = document.getElementById('PostTitleValue');
+        var PostBodyValue = document.getElementById('PostBodyValue');
+
+        var PostArr = []
+        var Content = []
+
+
+
+
+        function SubmitPost() {
+            var DisplayName = document.getElementById('DisplayName');
+            var DisplayTitle = document.getElementById('DisplayTitle');
+            var DisplayBody = document.getElementById('DisplayBody');
+
+            //     for (var i = 0; i < PostArr.length; i++){
+
+
+            // }
+            PostArr[PostArr.length] = {
+
+                Name: NameValue.value,
+                PostTitle: PostTitleValue.value,
+                PostBody: PostBodyValue.value
+            };
+
+            // DisplayName.innerHTML = PostArr[0].Name;
+            // DisplayTitle.innerHTML = PostArr[0].PostTitle;
+            // DisplayBody.innerHTML = PostArr[0].PostBody;
+
+
+
+
+            // console.log(typeof PostArr[1])
+
+            NameValue.value = ''
+            PostTitleValue.value = ''
+            PostBodyValue.value = ''
+
+
+            for (var i = 0; i < PostArr.length; i++) {
+                Content = Content + "<div style='border:1px solid black;'> <span>" + PostArr[i].Name + " </span> <br>  <span>" + PostArr[i].PostTitle + " </span> <p>" + PostArr[i].PostBody + "</p> </div>"
+            }
+
+            document.getElementById('Post-Container').innerHTML = Content;
+
+
+
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

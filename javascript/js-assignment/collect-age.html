@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            height: 120px;
+            width: 300px;
+            border-radius: 20px;
+            margin-top: 30px;
+            padding: 50px;
+            font-size: 20px;
+            font-weight: bolder;
+            border: white;
+            box-shadow: #ccc 3px 3px 3px 3px;
+        }
+
+        input:focus {
+            outline: 2px solid blue;
+        }
+
+        button {
+            height: 70px;
+            border-radius: 20px;
+            margin-top: 20px;
+            width: 150px;
+            background-color: blue;
+            border: none;
+            box-shadow: #ccc 3px 3px 3px 3px;
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+            margin-left: 20px;
+            text-align: center;
+        }
+
+        input::placeholder {
+            padding: 50px;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        p {
+            height: 90px;
+            padding: 20px;
+            box-shadow: #ccc 3px 3px 3px 3px;
+            border: 5px solid black;
+            visibility: hidden;
+            border-radius: 10px;
+            font-size: 35px;
+        }
+
+        #SecondBtn {
+            background-color: #ccc;
+            box-shadow: blue 3px 3px 3px 3px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <p id="DisplayV"></p>
+        <input type="text" placeholder="Enter age" id="inputVAlue">
+        <br>
+        <button onclick="Addage()" id="FirstBtn">Add age</button>
+
+        <button onclick="Rearrange()" id="SecondBtn">Rearange age</button>
+
+    </center>
+
+    <script>
+        var InputVal = document.getElementById('inputVAlue');
+        var StoreValue = [];
+        var FirstBtn = document.getElementById('FirstBtn');
+        var SecondBtn = document.getElementById('SecondBtn');
+        var DisplayV = document.getElementById('DisplayV')
+
+        function Addage() {
+            FirstBtn.style.width = '250px'
+            SecondBtn.style.width = '50px'
+            SecondBtn.style.fontSize = '10px'
+        
+            if (SecondBtn.style.fontSize = '10px') {
+                FirstBtn.style.fontSize = '20px'
+            } else {
+                FirstBtn.style.fontSize = '10px'
+            }
+
+            DisplayV.style.visibility = 'visible'
+
+
+            StoreValue.push(InputVal.value);
+
+            DisplayV.innerHTML = StoreValue;
+
+
+            InputVal.value = ''
+
+
+        }
+
+
+        function Rearrange() {
+            FirstBtn.style.width = '50px'
+            SecondBtn.style.width = '250px'
+            FirstBtn.style.fontSize = '10px'
+        
+            if (FirstBtn.style.fontSize = '10px') {
+                SecondBtn.style.fontSize = '20px'
+            } else {
+                SecondBtn.style.fontSize = '10px'
+            }
+
+            DisplayV.style.visibility = 'visible'
+
+            StoreValue.sort(Compare);
+
+            console.log(StoreValue)
+            document.getElementById('DisplayV').innerHTML = StoreValue;
+        }
+
+        function Compare(x, y) {
+           var ComPareValue = y - x;
+
+                    return ComPareValue;
+                
+        }
+
+      
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

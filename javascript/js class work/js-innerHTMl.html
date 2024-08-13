@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #pTag{
+        letter-spacing: 30px;
+        color: blue;
+    } 
+    </style>
+</head>
+
+<body>
+<center>
+    <div id="pTag"> </div>
+    <div id="SecondPTag"></div>
+</center>
+   
+
+    <script>
+        var num = 10
+        var i = num
+        var Store = '';
+        var StoreTotal = 0
+        while (i > 0) {
+
+           Store += i; 
+           StoreTotal += i;
+
+           i --
+    
+        }
+
+        document.getElementById('pTag').innerHTML = (Store);
+        document.getElementById('SecondPTag').innerHTML = (StoreTotal);
+        
+    </script>
+</body>
+
+</html>
