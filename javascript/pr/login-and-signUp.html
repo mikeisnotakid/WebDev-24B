@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp/Login Page</title>
+    <style>
+        .main-container {
+            border: 6px solid black;
+            width: 50%;
+            height: 600px;
+
+        }
+
+        input,
+        button {
+            height: 90px;
+            width: 50%;
+            margin-top: 20px;
+            border-radius: 10px;
+            padding-left: 20px;
+        }
+
+        input::placeholder {
+            font-size: 20px;
+            /* padding-left: 20px; */
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            padding-left: 0px;
+            width: 30%;
+            display: block;
+            font-weight: bolder;
+            border: none;
+            border-radius: 20px;
+            height: 60px;
+        }
+
+        .loginP,
+        .SignUp-P {
+            font-size: 15px;
+            color: blue;
+            text-decoration: underline;
+            text-transform: uppercase;
+
+
+        }
+
+
+        #login-container {
+            display: none;
+        }
+
+        #CheckEmailP,
+        #CheckPasswordP {
+
+            font-size: 18px;
+            text-transform: uppercase;
+
+
+        }
+
+        #Check-E-and-P-container {
+            background-color: #ccc;
+            box-shadow: black 4px 4px 4px 4px;
+            width: 70%;
+            border-radius: 10px;
+            color: black;
+
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="main-container">
+            <!-- Sign Up Div -->
+            <div id="sign-up-container">
+                <h1>Sign Up as a member</h1>
+
+                <input type="email" id="EmailValue" placeholder="Enter Email">
+                <input type="text" id="PasswordValue" placeholder="Create Password">
+                <button onclick="StoreValueInArray()">Sign Up</button>
+                <p class="loginP" onclick="DisplayLoginPage()">login</p>
+
+            </div>
+
+            <!-- Login in Div -->
+            <div id="login-container">
+                <h1>Login to enjoy our service</h1>
+                <hr>
+                <div id="Check-E-and-P-container">
+                    <p id="CheckEmailP"></p>
+                    <p id="CheckPasswordP"></p>
+                </div>
+
+
+                <input type="email" id="EmailValue2" placeholder="Enter Email">
+                <input type="text" id="PasswordValue2" placeholder="Enter Password">
+                <button onclick="CheckDetails()">Log in</button>
+                <p class="SignUp-P" onclick="DisplaySignUpPage()">Sign Up</p>
+
+            </div>
+
+        </div>
+    </center>
+
+
+
+    <script>
+        var ArrayStr = []
+        var EmailObj = []
+        var PasswordObj = []
+        var SignUpPage = document.getElementById('sign-up-container');
+        var LoginInPage = document.getElementById('login-container');
+
+        var CheckEmailValue = document.getElementById('EmailValue2');
+        var CheckPassword = document.getElementById('PasswordValue2');
+
+        var CheckEmailP = document.getElementById('CheckEmailP');
+        var CheckPasswordP = document.getElementById('CheckPasswordP');
+
+        var CheckBgDiv = document.getElementById('Check-E-and-P-container');
+
+
+        function StoreValueInArray() {
+            var EmailValue = document.getElementById('EmailValue').value;
+            var PasswordValue = document.getElementById('PasswordValue').value;
+
+            ArrayStr[ArrayStr.length] = { Email: EmailValue, Password: PasswordValue }
+            EmailObj[EmailObj.length] = ArrayStr[0].Email;
+            PasswordObj[PasswordObj.length] = ArrayStr[0].Password;
+
+            document.getElementById('EmailValue').value = '';
+            document.getElementById('PasswordValue').value = '';
+            SignUpPage.style.display = 'none'
+            LoginInPage.style.display = 'block'
+
+            // console.log(EmailObj);
+            // console.log(PasswordObj)
+
+
+
+        }
+        // console.log(ArrayStr)
+
+        function DisplayLoginPage() {
+            SignUpPage.style.display = 'none'
+            LoginInPage.style.display = 'block'
+        }
+
+        function DisplaySignUpPage() {
+            SignUpPage.style.display = 'block'
+            LoginInPage.style.display = 'none'
+        }
+
+        function CheckDetails() {
+            CheckBgDiv.style.padding = '20px 0'
+
+            if (CheckEmailValue.value == EmailObj) {
+                // console.log('welcome ' + EmailObj);
+                CheckEmailP.innerHTML = ('Welcome ' + EmailObj)
+                CheckBgDiv.style.color = 'black'
+
+            } else {
+                // console.log('Incorrect Email')
+                CheckEmailP.innerHTML = ('Your Email is wrong')
+                CheckBgDiv.style.color = 'red'
+            }
+
+            if (CheckPassword.value == PasswordObj) {
+                // console.log('welcome ' + PasswordObj);
+                CheckPasswordP.innerHTML = ('Welcome ' + PasswordObj)
+                CheckBgDiv.style.color = 'black'
+            } else {
+                // console.log('Incorrect Password')
+                CheckPasswordP.innerHTML = ('The Password you entered is incorrect')
+                CheckBgDiv.style.color = 'red'
+            }
+
+            // CheckEmailValue.value = ''
+            // CheckPassword.value = ''
+
+            // console.log(CheckEmailValue.value)
+        }
+
+        // console.log(EmailObj)
+        // console.log(PasswordObj)
+
+
+    </script>
+</body>
+
+</html>

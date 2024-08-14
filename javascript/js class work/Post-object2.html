@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+    </head>
+    <body>
+
+
+        <center>
+            <div style="border:2px solid black; width: 50%; height:80vh ;">
+                <input type="" id="name" placeholder="Name">
+                <br>
+
+                <input type="" id="title" placeholder="Post Title">
+                <br>
+
+                <textarea id="body" placeholder="Post body"></textarea>
+
+                <br><br>
+
+                <button onclick="getPost()"> Submit</button>
+
+                <hr>
+
+
+                <div id="postArea" style="height: 200px; overflow: auto;">                   
+
+                </div>
+
+                
+            </div>
+
+
+        </center>
+
+    </body>
+    <script type="text/javascript">
+        
+
+        // create an empty array
+        var posts = [];
+        var content = ''
+
+        function getPost(){
+
+            // get user input
+            var name = document.getElementById('name').value
+            var title = document.getElementById('title').value
+            var body = document.getElementById('body').value
+
+            posts[posts.length] = {name:name, title:title, body:body}
+
+
+            document.getElementById('name').value = ''
+            document.getElementById('title').value = ''
+            document.getElementById('body').value = ''
+
+            for (var i = 0; i < posts.length; i++) {
+                
+               content = content + "<div style='border:1px solid black;'> <span>"+posts[i].name+"</span> <br> <span>"+posts[i].title+"</span><p>"+posts[i].body+"</p></div>";
+
+
+                document.getElementById('postArea').innerHTML = content;
+
+
+            }
+
+        }
+
+        
+
+
+    </script>
+</html>

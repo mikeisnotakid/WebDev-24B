@@ -95,22 +95,20 @@
             // DisplayBody.innerHTML = PostArr[0].PostBody;
 
 
-
-
             // console.log(typeof PostArr[1])
-
-            NameValue.value = ''
-            PostTitleValue.value = ''
-            PostBodyValue.value = ''
 
 
             for (var i = 0; i < PostArr.length; i++) {
-                Content = Content + "<div style='border:1px solid black;'> <span>" + PostArr[i].Name + " </span> <br>  <span>" + PostArr[i].PostTitle + " </span> <p>" + PostArr[i].PostBody + "</p> </div>"
+                Content = Content + "<div style='border:1px solid black;'> <span>" + "<Strong>" + PostArr[i].Name + "<Strong/>" + " </span> <br>  <span>" + PostArr[i].PostTitle + " </span> <p>" + PostArr[i].PostBody + "</p> </div>"
             }
 
             document.getElementById('Post-Container').innerHTML = Content;
 
 
+
+            NameValue.value = ''
+            PostTitleValue.value = ''
+            PostBodyValue.value = ''
 
 
         }
