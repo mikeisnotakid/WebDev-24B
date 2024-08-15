@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<body>
+
+
+		<center>
+			
+			<input type="" id="email" placeholder="email">
+			<br><br>
+
+			<input type="password" id="pass" placeholder="">
+			<br><br>
+
+
+			<button onclick="signUp()">signup</button>
+			<button onclick="logIn()">Login</button>
+
+
+		</center>
+
+
+
+	</body>
+</html>
+
+
+<script type="text/javascript">
+	
+
+	var usersArray = [];
+
+	function signUp(){
+
+		var email = document.getElementById('email').value
+		var pass = document.getElementById('pass').value
+
+		var details = {email:email, password:pass }
+
+		usersArray[usersArray.length] = details
+
+		document.getElementById('email').value = ''
+		document.getElementById('pass').value = ''
+
+
+		// console.log(usersArray)
+
+	}
+
+
+
+
+	// function to log users in
+	function logIn(){
+
+		// get users inputs
+		var email = document.getElementById('email').value
+		var pass = document.getElementById('pass').value
+
+
+		for (var i = 0; i < usersArray.length; i++) {
+
+
+			if (email == usersArray[i].email && pass == usersArray[i].password) {
+
+				console.log('Login success!')
+				break;
+			}else{
+				
+				console.log('Login FAILED!')
+				break;
+			}
+		}
+
+
+
+
+	}
+
+
+
+
+</script>

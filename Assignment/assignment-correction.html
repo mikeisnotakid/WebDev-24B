@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		input {
+			height: 60px;
+			width: 50%;
+			padding: 0 20px;
+			font-size: 35px;
+			box-shadow: #ccc 4px 4px 4px 4px;
+			margin: 20px 50px;
+			border-radius: 10px;
+		}
+
+		input::placeholder {
+			font-size: 25px;
+		}
+
+		button {
+			height: 60px;
+			width: 150px;
+			border-radius: 10px;
+			border: none;
+			font-weight: bolder;
+			font-size: 17px;
+			text-transform: uppercase;
+			margin-left: 10px;
+			box-shadow: black 3px 3px 3px 3px;
+		}
+
+		#DisplayR,
+		#DisplayR2,
+		#DisplayR3 {
+			font-size: 25px;
+			text-align: center;
+
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<center>
+
+		<input type="" id="email" placeholder="Email">
+		<br><br>
+
+		<input type="text" id="pass" placeholder="Password">
+		<br><br>
+
+
+		<button id="SignUpBtn" onclick="signUp()">signup</button>
+		<button id="LoginBtn" onclick="logIn()">Login</button>
+		<button id="ResetBtn" onclick="ResetP()">Reset Password </button>
+
+		<p id="DisplayR"><br></p>
+		<p id="DisplayR2"></p>
+		<p id="DisplayR3"></p>
+
+
+	</center>
+
+
+
+
+</body>
+
+</html>
+
+
+<script type="text/javascript">
+
+
+	var usersArray = [];
+	// var Data = [];
+	var SignUpBtn = document.getElementById('SignUpBtn');
+	var LoginBtn = document.getElementById('LoginBtn');
+	var ResetBtn = document.getElementById('ResetBtn');
+	var DisplayR = document.getElementById('DisplayR');
+	var DisplayR2 = document.getElementById('DisplayR2');
+	var DisplayR3 = document.getElementById('DisplayR3')
+
+	function signUp() {
+
+
+
+		SignUpBtn.style.width = '130px'
+		SignUpBtn.style.height = '40px'
+		var email = document.getElementById('email').value
+		var pass = document.getElementById('pass').value
+
+
+		var details = { email: email, password: pass }
+		usersArray[usersArray.length] = details;
+
+		console.log(usersArray)
+
+		// for (var i = 0; i < usersArray.length; i++) {
+
+
+		// 	// MYPost	= MYPost + usersArray[i].email
+		// 	// 	MYPost = MYPost + usersArray[i].password
+		// 	// DisplayR.innerHTML = usersArray[i].email
+		// 	// DisplayR.innerHTML = usersArray[i].password
+		// 	// console.log(usersArray[i].email)
+		// 	// console.log(usersArray[i].password)
+		// 	console.log(Data)
+		// }
+
+
+
+		document.getElementById('email').value = ''
+		document.getElementById('pass').value = ''
+		// DisplayR.innerHTML = (MYPost)
+
+		// console.log(usersArray)
+
+	}
+
+
+
+
+	// function to log users in
+	function logIn() {
+
+		LoginBtn.style.width = '130px'
+		LoginBtn.style.height = '40px'
+
+		// get users inputs
+		var email = document.getElementById('email').value
+		var pass = document.getElementById('pass').value
+
+
+		for (var i = 0; i < usersArray.length; i++) {
+
+
+			if (email == usersArray[i].email && pass == usersArray[i].password) {
+
+				console.log('Login success!')
+
+				DisplayR.innerHTML = ('Welcome ' + usersArray[i].email)
+				DisplayR2.innerHTML = ('Your password is ' + usersArray[i].password)
+				DisplayR3.innerHTML = 'Login success!'
+				break;
+			} else {
+
+				console.log('Login FAILED!')
+				DisplayR.innerHTML = 'Wrong Details!'
+				DisplayR2.innerHTML = 'Wrong Details!!!'
+				DisplayR3.innerHTML = 'Login FAILED!'
+				break;
+			}
+		}
+
+
+		var email = document.getElementById('email').value = ''
+		var pass = document.getElementById('pass').value = ''
+
+
+	}
+
+	function ResetP() {
+
+		ResetBtn.style.width = '130px'
+		ResetBtn.style.height = '40px'
+
+		var email = document.getElementById('email').value
+		var pass = document.getElementById('pass').value
+
+		for (var i = 0; i < usersArray.length; i++) {
+
+			usersArray[i].password = pass
+			DisplayR.innerHTML = 'Welcome ' + usersArray[i].email;
+			DisplayR2.innerHTML = 'Your new password is ' + usersArray[i].password
+
+			DisplayR3.innerHTML = 'Password Changed!!'
+ 
+		}
+
+
+
+		// console.log(email);
+		// console.log(pass)
+
+	}
+
+
+
+
+</script>

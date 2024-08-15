@@ -117,8 +117,8 @@
 
     <script>
         var ArrayStr = []
-        var EmailObj = []
-        var PasswordObj = []
+        var EmailObj = '';
+        var PasswordObj = '';
         var SignUpPage = document.getElementById('sign-up-container');
         var LoginInPage = document.getElementById('login-container');
 
@@ -136,8 +136,9 @@
             var PasswordValue = document.getElementById('PasswordValue').value;
 
             ArrayStr[ArrayStr.length] = { Email: EmailValue, Password: PasswordValue }
-            EmailObj[EmailObj.length] = ArrayStr[0].Email;
-            PasswordObj[PasswordObj.length] = ArrayStr[0].Password;
+
+            EmailObj = EmailObj + ArrayStr[0].Email;
+            PasswordObj = PasswordObj + ArrayStr[0].Password;
 
             document.getElementById('EmailValue').value = '';
             document.getElementById('PasswordValue').value = '';
@@ -185,6 +186,21 @@
                 CheckPasswordP.innerHTML = ('The Password you entered is incorrect')
                 CheckBgDiv.style.color = 'red'
             }
+
+
+
+            // if (CheckEmailValue.value == EmailObj && CheckPassword.value == PasswordObj) {
+
+            //     CheckEmailP.innerHTML = ('Welcome ' + EmailObj)
+            //     CheckPasswordP.innerHTML = ('Welcome ' + PasswordObj)
+            //     CheckBgDiv.style.color = 'black'
+
+            // } else {
+
+            //     CheckEmailP.innerHTML = ('Your Email is wrong')
+            //     CheckPasswordP.innerHTML = ('The Password you entered is incorrect')
+            //     CheckBgDiv.style.color = 'red'
+            // }
 
             // CheckEmailValue.value = ''
             // CheckPassword.value = ''
