@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #sub-container{
+            height: 300px;
+            width: 200px;
+            background-color: yellow;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div id="sub-container">
+
+        </div>
+        <p><span id="Hours">00</span> <span id="Minutes">00</span> <span id="Seconds">00</span><span id="AmOrPm"></span>
+        </p>
+        <button onclick="StartTime()">Start</button>
+        <button onclick="StopTime()">Stop</button>
+    </center>
+
+
+    <script>
+        var Hours = document.getElementById('Hours');
+        var Minutes = document.getElementById('Minutes');
+        var Seconds = document.getElementById('Seconds');
+        var AmOrPm = document.getElementById('AmOrPm');
+        var Container = document.getElementById('sub-containe');
+
+
+        function Count() {
+
+             Seconds.innerHTML++;
+
+            // setInterval(StartTime, 1000);
+            //  document.write(addSeconds)
+            if (Seconds.innerHTML == 60) {
+                Minutes.innerHTML++;
+                Seconds.innerHTML = 0;
+            }
+
+            if (Minutes.innerHTML == 60) {
+                Hours.innerHTML++
+                Minutes.innerHTML = 0
+            }
+
+            // if (Hours.innerHTML >= 12) {
+            //     AmOrPm.innerHTML = ' PM'
+            // } else {
+            //     AmOrPm.innerHTML = ' AM'
+            // }
+
+
+
+        }
+
+        if(Minutes.innerHTML == 1){
+            alert('hdellds')
+        }
+
+        function StartTime() {
+            setInterval(Count, 1000);
+        }
+
+
+        function StopTime() {
+            Hours.innerHTML = 0
+            Minutes.innerHTML = 0
+            Seconds.innerHTML = 0
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

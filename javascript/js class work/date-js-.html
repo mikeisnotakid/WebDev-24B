@@ -8,15 +8,31 @@
 </head>
 
 <body>
-   vol
+    <center>
+        <p id="DisplayOnScreen"></p>
+        <!-- <button onclick="CheckTime()">Check time</button> -->
+    </center>
+
 
     <script>
-        // var d = Date.parse(2024, 7, 15, 0, 0, 0);
-        var Utc = 1704067200000;
+        function CheckTime() {
+            var MyTime = new Date();
+            var hours = MyTime.getHours();
+            var mins = MyTime.getMinutes();
+            var seconds = MyTime.getSeconds();
+            if (hours >= 12) {
+                document.getElementById('DisplayOnScreen').innerHTML = (hours + ":" + mins + ":" + seconds + " PM");
 
-        var d = new[;p; ] Date(Utc)
+            } else {
+                document.getElementById('DisplayOnScreen').innerHTML = (hours + ":" + mins + ":" + seconds + " AM");
+            }
 
-        document.write(d.getFullYear())
+
+        }
+        
+        setInterval(CheckTime, 1000);
+
+
 
     </script>
 </body>
