@@ -307,6 +307,112 @@ body {
     padding: 15px 0;
 }
 
+.write-post-container {
+    /* border: 4px solid green; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    padding: 60px 0;
+}
+@keyframes MovePostContainer {
+
+    50% {
+        transform: translateY(800px);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+
+}
+.write-post-container-Div {
+    height: 90%;
+    border: 2px solid white;
+    width: 35%;
+    margin: auto;
+    background-color: black;
+    text-align: center;
+    z-index: 100;
+    box-shadow: #ccc 4px 4px 4px 4px;
+    border-radius: 20px;
+    animation-name: MovePostContainer;
+    animation-duration: 1s;
+    display: none;
+    transform: translateY(-50px);
+
+
+
+}
+
+
+
+.write-post-container-Div-top {
+    height: 10%;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 10px 0;
+
+}
+
+.write-post-container-Div-bottom {
+    height: 90%;
+    /* border: 4px solid yellow; */
+    padding: 50px 0;
+}
+
+.write-post-container-Div-bottom input {
+    height: 120px;
+    border-radius: 20px;
+    outline: 4px solid white;
+    display: block;
+    width: 100%;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 25px;
+    padding: 0 20px;
+
+}
+
+
+.write-post-container-Div-bottom input::placeholder {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+}
+
+
+.write-post-container-Div-bottom .fa-solid {
+    font-size: 100px;
+    padding: 20px 0;
+}
+
+.write-post-container-Div-bottom h2 {
+    padding: 20px 0;
+}
+
+.write-post-container-Div-bottom button {
+    height: 40px;
+    background-color: blue;
+    color: white;
+    width: 200px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 25px;
+    border: none;
+
+}
+
+#OutPut{
+    height: 300px;
+    border: 4px solid white;
+    display: none;
+}
+
 
 @media only screen and (max-width: 1300px) {
 

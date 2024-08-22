@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <input type="text" placeholder="Say Something" id="InputValue">
+        <button onclick="TestR()">Test</button>
+    </center>
+
+    <script>
+        function TestR() {
+            var InputValue = document.getElementById('InputValue').value;
+
+            //    for (var i = 0; i < Words.length ; i ++){
+            //     if (Words[i] == InputValue){
+            //         console.log('Wrong ')
+
+            //     }else{
+            //         console.log('Your free to use word')
+            //     }
+
+            //    }
+            // var fWord = 'Fuck'
+            // var BWord = 'Bitch'
+            // var Nigga = 'Nigga'
+
+            // if (fWord == InputValue) {
+            //     console.log(fWord.replace(/fuck/ig, 'F*ck'));
+            // }
+
+            // if (BWord == InputValue) {
+            //     console.log(BWord.replace(/Bitch/ig, 'B*tch'))
+            // }
+
+            // if (Nigga == InputValue) {
+            //     console.log(Nigga.replace(/Nigga/ig, 'N*gga'))
+            // }    
+
+            var NewWord = InputValue.replace(/bitch/ig, 'b*tch');
+            NewWord = NewWord.replace(/Fuck/ig, 'F*ck');
+            NewWord = NewWord.replace(/Nigga/ig, 'N*gga');
+
+
+            console.log(NewWord)
+
+
+
+
+
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>

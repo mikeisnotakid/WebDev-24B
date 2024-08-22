@@ -8,14 +8,48 @@
     <link rel="stylesheet" href="owlcarousel/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 
-
+    <style>
+        .owl-carousel div{
+            height: 500px;
+            width: 400px;
+        }
+    </style>
 </head>
+
 <body>
+    <div class="owl-carousel">
+        <div> <img src="/Images/loader-1846346.jpg" alt=""> </div>
+        <div> <img src="/Images/logo.jpeg" alt=""> </div>
+        <div><img src="/Images/truck-2591007.jpg" alt=""></div>
+        <div> <img src="/Images/youtube-background-7764176_1280.jpg" alt=""></div>
+        <div> <img src="/Images/truck-2591007.jpg" alt=""></div>
+        <div> <img src="/Images/sunset-3378088.jpg" alt=""> </div>
+        <div><img src="/Images/logo.jpeg" alt=""></div>
+    </div>
 
 
 
-<script src="owlcarousel/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
-<script src="owlcarousel/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="owlcarousel/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="owlcarousel/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [1000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+    </script>
 </body>
 
 </html>

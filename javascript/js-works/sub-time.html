@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+ </head>
+ <body>
+
+
+
+  <button onclick="setTime_()">Start 5mns sub</button>
+
+  <button onclick="checkTime() ">Check time</button>
+
+ </body>
+
+
+ <script type="text/javascript">
+  
+  var future
+  function setTime_(){
+
+   var d = new Date();
+
+   var currentTime = d.getTime()
+
+   var mns5 = 300000;
+
+   future = currentTime + mns5
+
+   console.log(future)
+
+  }
+
+  function checkTime(){
+   var d = new Date();
+
+   var currentTime = d.getTime()
+
+   if (currentTime >= future) {
+    console.log('time elapsed')
+   }else{
+    console.log('time remaining');
+   }
+  }
+
+
+ </script> 
+</html>

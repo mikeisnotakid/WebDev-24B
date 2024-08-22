@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <input type="text" placeholder="Enter Number" id="NumberVal">
+        <button onclick="CheckBtn()">Check</button>
+    </center>
+
+
+
+    <script>
+
+        var Store = [];
+        var count = 0
+        function CheckBtn() {
+            var NumberVal = document.getElementById('NumberVal').value;
+            for (var i = 0; i < NumberVal; i++) {
+                if (i % 2 != 0) {
+                    continue;
+                } else {
+                    count = + 1
+                }
+
+                console.log(i)
+
+                if (count == 20) {
+                    break
+                }
+            }
+        }
+
+
+        connsole.log('even number =>', count)
+
+    </script>
+</body>
+
+</html>

@@ -11,6 +11,25 @@
 </head>
 
 <body>
+    <div class="write-post-container">
+        <div class="write-post-container-Div" id="writePostDiv">
+            <div class="write-post-container-Div-top">
+                <p>Create new post</p>
+            </div>
+            <div class="write-post-container-Div-bottom">
+
+                <input type="text" placeholder="What's on your mind ?" id="getWriteUp">
+
+
+                <i class="fa-solid fa-image"></i>
+                <i class="fa-solid fa-video"></i>
+                <h2>Choose photos or videos</h2>
+                <button onclick="AddPostBtn()">Add Post</button>
+                <i class="fa-solid fa-xmark" style="font-size: 40px; padding: 0 20px;" onclick="CloseWriteUpPost()"></i>
+            </div>
+
+        </div>
+    </div>
     <!-- Mobile nav  -->
     <div class="mobile-top-nav">
         <div class="mobile-top-nav-child-left">
@@ -43,7 +62,7 @@
                         <li><i class="fa fa-film" aria-hidden="true"></i> Reals</li>
                         <li> <i class="fa-brands fa-facebook-messenger"></i>Messages</li>
                         <li><i class="fa fa-heart-o" aria-hidden="true"></i> Notification</li>
-                        <li><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</li>
+                        <li onclick="CreateBtnFunc()"><i class="fa fa-plus-square-o" aria-hidden="true" ></i> Create</li>
                         <li> <img src="instagram images/profile-logo-2.jpg" class="img-nav">Profile</li>
                         <li class="thread"><i class="fa-brands fa-threads"></i>Threads</li>
                         <li><i class="fa fa-bars" aria-hidden="true"></i> More</li>
@@ -180,12 +199,49 @@
                     </div>
                 </div>
             </div>
+
+            
+
+
             <div class="body">
+             yy -->
+                <div class="post-container">
+                    <div class="head">
+                        <div class="head-write-up">
+                            <img src="instagram images/profile-logo-cp.jpg">
+                            <p >cubana_chiefpriest <i class="fa fa-check-circle" aria-hidden="true"></i>. 4h</p>
+
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <img src="instagram images/post-img-1-obo.jpg">
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom-write-up">
+
+                            <div class="bottom-icons-container">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+
+                            <p>660,000 likes</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugiat, nostrum
+                                voluptate veniam iste dolorem laborum ut rerum vitae quos.</p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
                 <div class="post-container">
                     <div class="head">
                         <div class="head-write-up">
                             <img src="instagram images/profile-logo-5.jpg">
-                            <p>davido <i class="fa fa-check-circle" aria-hidden="true"></i>. 1h</p>
+                            <p >davido <i class="fa fa-check-circle" aria-hidden="true"></i>. 1h</p>
 
                         </div>
                     </div>
@@ -198,9 +254,9 @@
                             <div class="bottom-icons-container">
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-regular fa-comment"></i>
-                                <i class="fa-regular fa-paper-plane"></i>    
+                                <i class="fa-regular fa-paper-plane"></i>
                             </div>
-                         
+
                             <p>1,000,000 likes</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugiat, nostrum
                                 voluptate veniam iste dolorem laborum ut rerum vitae quos.</p>
@@ -210,7 +266,8 @@
 
                     </div>
                 </div>
-                
+
+              
 
                 <div class="post-container">
                     <div class="head">
@@ -229,9 +286,9 @@
                             <div class="bottom-icons-container">
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-regular fa-comment"></i>
-                                <i class="fa-regular fa-paper-plane"></i>    
+                                <i class="fa-regular fa-paper-plane"></i>
                             </div>
-                         
+
                             <p>660,000 likes</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugiat, nostrum
                                 voluptate veniam iste dolorem laborum ut rerum vitae quos.</p>
@@ -260,7 +317,7 @@
                             <div class="bottom-icons-container">
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-regular fa-comment"></i>
-                                <i class="fa-regular fa-paper-plane"></i>    
+                                <i class="fa-regular fa-paper-plane"></i>
                             </div>
                             <p>660,000 likes</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugiat, nostrum
@@ -271,7 +328,7 @@
 
                     </div>
                 </div>
-                
+
                 <div class="post-container">
                     <div class="head">
                         <div class="head-write-up">
@@ -289,7 +346,7 @@
                             <div class="bottom-icons-container">
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-regular fa-comment"></i>
-                                <i class="fa-regular fa-paper-plane"></i>    
+                                <i class="fa-regular fa-paper-plane"></i>
                             </div>
                             <p>660,000 likes</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugiat, nostrum
@@ -300,99 +357,103 @@
 
                     </div>
 
-
-                    
-                <div class="post-container">
-                    <div class="head">
-                        <div class="head-write-up">
-                            <img src="instagram images/profile-logo-4.jpg">
-                            <p>wizkidayo <i class="fa fa-check-circle" aria-hidden="true"></i>. 1h</p>
-
-                        </div>
-                    </div>
-                    <div class="middle">
-                        <img src="instagram images/wizkidayo-post-4.jpg">
-                    </div>
-                    <div class="bottom">
-                        <div class="bottom-write-up">
-
-                            <div class="bottom-icons-container">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-comment"></i>
-                                <i class="fa-regular fa-paper-plane"></i>    
-                            </div>
-                            <p>660,000 likes</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugiat, nostrum
-                                voluptate veniam iste dolorem laborum ut rerum vitae quos.</p>
-                        </div>
-
-
-
-                    </div>
-
-
-
-                    
-                <div class="post-container">
-                    <div class="head">
-                        <div class="head-write-up">
-                            <img src="instagram images/profile-logo-6.jpg">
-                            <p>heisrema <i class="fa fa-check-circle" aria-hidden="true"></i>. 2h</p>
-
-                        </div>
-                    </div>
-                    <div class="middle">
-                        <img src="instagram images/post-img-6.jpg">
-                    </div>
-                    <div class="bottom">
-                        <div class="bottom-write-up">
-
-                            <div class="bottom-icons-container">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-comment"></i>
-                                <i class="fa-regular fa-paper-plane"></i>    
-                            </div>
-                            <p>660,000 likes</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugiat, nostrum
-                                voluptate veniam iste dolorem laborum ut rerum vitae quos.</p>
-                        </div>
-
-                    </div>
 
 
                     <div class="post-container">
                         <div class="head">
                             <div class="head-write-up">
-                                <img src="instagram images/profile-logo-7.jpg">
-                                <p>theycallmeshallipopi <i class="fa fa-check-circle" aria-hidden="true"></i>. 1h</p>
-    
+                                <img src="instagram images/profile-logo-4.jpg">
+                                <p>wizkidayo <i class="fa fa-check-circle" aria-hidden="true"></i>. 1h</p>
+
                             </div>
                         </div>
                         <div class="middle">
-                            <img src="instagram images/post-img-7.jpg">
+                            <img src="instagram images/wizkidayo-post-4.jpg">
                         </div>
                         <div class="bottom">
                             <div class="bottom-write-up">
-    
+
                                 <div class="bottom-icons-container">
                                     <i class="fa-regular fa-heart"></i>
                                     <i class="fa-regular fa-comment"></i>
-                                    <i class="fa-regular fa-paper-plane"></i>    
+                                    <i class="fa-regular fa-paper-plane"></i>
                                 </div>
                                 <p>660,000 likes</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugiat, nostrum
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugiat,
+                                    nostrum
                                     voluptate veniam iste dolorem laborum ut rerum vitae quos.</p>
                             </div>
-    
-                        </div>
-    
-                    </div>
 
-                </div>
+
+
+                        </div>
+
+
+
+
+                        <div class="post-container">
+                            <div class="head">
+                                <div class="head-write-up">
+                                    <img src="instagram images/profile-logo-6.jpg">
+                                    <p>heisrema <i class="fa fa-check-circle" aria-hidden="true"></i>. 2h</p>
+
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <img src="instagram images/post-img-6.jpg">
+                            </div>
+                            <div class="bottom">
+                                <div class="bottom-write-up">
+
+                                    <div class="bottom-icons-container">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-comment"></i>
+                                        <i class="fa-regular fa-paper-plane"></i>
+                                    </div>
+                                    <p>660,000 likes</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugiat,
+                                        nostrum
+                                        voluptate veniam iste dolorem laborum ut rerum vitae quos.</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="post-container">
+                                <div class="head">
+                                    <div class="head-write-up">
+                                        <img src="instagram images/profile-logo-7.jpg">
+                                        <p>theycallmeshallipopi <i class="fa fa-check-circle" aria-hidden="true"></i>.
+                                            1h</p>
+
+                                    </div>
+                                </div>
+                                <div class="middle">
+                                    <img src="instagram images/post-img-7.jpg">
+                                </div>
+                                <div class="bottom">
+                                    <div class="bottom-write-up">
+
+                                        <div class="bottom-icons-container">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <i class="fa-regular fa-comment"></i>
+                                            <i class="fa-regular fa-paper-plane"></i>
+                                        </div>
+                                        <p>660,000 likes</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+                                            fugiat, nostrum
+                                            voluptate veniam iste dolorem laborum ut rerum vitae quos.</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="right col-4">
@@ -476,7 +537,7 @@
 
         </div>
     </div>
-
+<script src="instagram.js"></script>
     <script src="https://kit.fontawesome.com/813b700df1.js" crossorigin="anonymous"></script>
 </body>
 
