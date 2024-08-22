@@ -526,7 +526,7 @@
     }
 
 
-    .drop-down-content {
+    .drop-down-content{
         height: 220px;
         background-color: black;
         color: white;
@@ -539,13 +539,17 @@
         padding: 0px 10px;
         width: 200%;
 
+}
 
+.drop-down-content p{
+    text-align: center;
+    font-size: 25px;
+   
+}
 
         /* .drop-down-menu:hover .drop-down-content {
         display: block;
     } */
 
 
-
-    }
 }
