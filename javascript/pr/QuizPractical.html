@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Quiz</title>
+    <style>
+        .PreviousBtn {
+            display: block;
+            margin-top: 20px;
+        }
+
+        .NExtBtn {
+            margin-top: 20px;
+            display: block;
+        }
+
+        #Question2{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+
+     
+        <!-- Question 1 -->
+
+
+        <div id="Question1">
+            <p>Which of the words is not related to transportation ?</p>
+            <button onclick="Q1Btn1()" id="Q1Btn1">Animal</button>
+            <button onclick="Q1Btn2()" id="Q1Btn2">Car</button>
+            <button onclick="Q1Btn3()" id="Q1Btn3">Bike</button>
+            <button onclick="Q1Btn4()" id="Q1Btn4">Train</button>
+
+           
+            <button class="NExtBtn" id="NExtBtnQ1" onclick="NExtBtnQ1()">Next</button>
+            <p>Question 1</p>
+        </div>
+
+        <!-- Question 2 -->
+
+        <div id="Question2">
+            <p>Which of the words is not related to School ?</p>
+            <button onclick="Q2Btn1()" id="Q2Btn1">Uniform</button>
+            <button onclick="Q2Btn2()" id="Q2Btn2">Pin</button>
+            <button onclick="Q2Btn3()" id="Q2Btn3">Bag</button>
+            <button onclick="Q2Btn4()" id="Q2Btn4">Rat</button>
+
+            <button class="PreviousBtn" id="PreviousBtnQ2" onclick="PreviousBtnQ2()">Previous</button>
+            <button class="NExtBtn" id="NExtBtnQ2">Next</button>
+
+            <p>Question 2</p>
+        </div>
+
+    </center>
+
+
+    <script src="QuizPractical.js"></script>
+</body>
+
+</html>

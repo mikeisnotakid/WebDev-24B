@@ -534,7 +534,7 @@
         position: relative;
         top: 15px;
         clear: both;
-        /* display: none; */
+        display: none;
 
         padding: 0px 10px;
         width: 200%;
