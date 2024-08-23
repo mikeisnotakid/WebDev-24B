@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.main-container {
+    height: 100vh;
+    /* border: 4px solid green; */
+
+}
+
+.left-container {
+    float: left;
+    /* border: 4px solid red; */
+    background-color: rgb(36, 65, 92);
+    height: 100%;
+    padding: 0 50px;
+}
+
+.left-container-top {
+    height: 10%;
+    /* border: 4px solid dodgerblue; */
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.left-container-top-left {
+    padding: 0 80px;
+}
+
+.left-container-top-left,
+.left-container-top-right {
+    float: left;
+    /* border: 4px solid red; */
+    height: 100%;
+}
+
+.left-container-top-right p {
+    font-size: 50px;
+    color: purple;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left-container-body {
+    /* border: 4px solid yellowgreen; */
+    height: 90%;
+    padding: 50px 0;
+    color: white;
+}
+
+.left-container-body i {
+    font-size: 20px;
+
+}
+
+.left-container-body p {
+    font-size: 30px;
+    padding: 20px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.right-container {
+    float: left;
+    /* border: 4px solid yellow; */
+    background-color: rgb(36, 65, 92);
+    height: 100%;
+    padding: 0 50px;
+}
+
+
+.fa-sun,
+.fa-moon {
+    font-size: 40px;
+    padding: 15px 15px;
+    float: right;
+    color: white;
+
+}
+
+.fa-moon {
+    color: purple;
+}
+
+
+
+.right-container-top {
+    height: 10%;
+    /* border: 4px solid dodgerblue; */
+}
+
+/* .right-container button {
+    height: 80px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+  
+} */
+
+
+
+.right-container .NextBtn,
+.PreviousBtn {
+    background-color: purple;
+    color: white;
+    font-size: 25px;
+    height: 80px;
+    /* border: 4px solid red; */
+    border-radius: 30px;
+    margin-top: 20px;
+    width: 40%;
+    border: none;
+    float: right;
+    margin-left: 10px;
+
+
+}
+
+.NextBtn:hover {
+    border: 4px solid white;
+
+}
+
+.PreviousBtn:hover {
+    border: 4px solid white;
+
+}
+
+.btn-div:hover {
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+
+.right-container .btn-div {
+    height: 80px;
+    /* border: 4px solid red; */
+
+    margin-top: 20px;
+
+}
+
+.right-container .btn-div-left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.right-container .btn-div-right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+
+.right-container .btn-div-left,
+.right-container .btn-div-right {
+    /* border: 4px solid green; */
+    background-color: rgba(22, 37, 56, 0.52);
+    float: left;
+    height: 100%;
+
+
+}
+
+.right-container .btn-div-left {
+    padding: 10px 20px;
+
+}
+
+.right-container .btn-div-left .btn-div-left-letters {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+.right-container .btn-div-right button {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(22, 37, 56, 0.52);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    text-align: left;
+    padding: 0 20px;
+    font-size: 20px;
+    color: white;
+}

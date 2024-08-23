@@ -16,32 +16,181 @@
             display: block;
         }
 
-        #Question2{
+        #Question2 {
             display: none;
         }
     </style>
+
+    <link rel="stylesheet" href="QuizPractical.css">
 </head>
 
 <body>
-    <center>
 
-     
-        <!-- Question 1 -->
+    <div class="main-container" id="Question1">
+        <div class="left-container col-6">
+            <div class="left-container-top">
+                <div class="left-container-top-left col-6"> <img src="images/mike_logo-removebg-preview.png"></div>
+                <div class="left-container-top-right col-6">
+                    <p>Quiz</p>
+                </div>
+
+            </div>
+
+            <div class="left-container-body">
+                <i>Question 1 of 20</i>
+                <p>Which of the words is not related to transportation ?</p>
+            </div>
+        </div>
+
+        <div class="right-container col-6">
+            <div class="right-container-top">
+                <i class="fa-regular fa-moon"></i>
+
+                <i class="fa-solid fa-sun" onclick="ChangeToLightMode"></i>
+            </div>
+
+            <div class="btn-div" onclick="Q1Btn1()" id="Q1Btn_1">
+                <div class="btn-div-left col-2">
+                    <div class="btn-div-left-letters">A</div>
+                </div>
+                <div class="btn-div-right col-10">
+
+                    <button id="Q1Btn1">Animal</button>
+
+                </div>
+            </div>
+            <div class="btn-div" onclick="Q1Btn2()" id="Q1Btn_2">
+                <div class="btn-div-left col-2">
+                    <div class="btn-div-left-letters">B</div>
+                </div>
+                <div class="btn-div-right col-10">
+                    <button id="Q1Btn2">Car</button>
+                </div>
+            </div>
+            <div class="btn-div" onclick="Q1Btn3()" id="Q1Btn_3">
+                <div class="btn-div-left col-2">
+                    <div class="btn-div-left-letters">C</div>
+                </div>
+                <div class="btn-div-right col-10">
+                    <button id="Q1Btn3">Bike</button>
+                </div>
+            </div>
+            <div class="btn-div" onclick="Q1Btn4()" id="Q1Btn_4">
+                <div class="btn-div-left col-2">
+                    <div class="btn-div-left-letters">D</div>
+                </div>
+                <div class="btn-div-right col-10">
+                    <button id="Q1Btn4">Train</button>
+                </div>
+            </div>
+
+            <button class="NextBtn" id="NExtBtnQ1" onclick="NExtBtnQ1()">Next <i class="fa-solid fa-forward"></i>
+            </button>
+        </div>
+
+        </div>
 
 
-        <div id="Question1">
+        <!-- Question 2 -->
+
+        <div class="main-container" id="Question2">
+            <div class="left-container col-6" >
+                <div class="left-container-top">
+                    <div class="left-container-top-left col-6"> <img src="images/mike_logo-removebg-preview.png"></div>
+                    <div class="left-container-top-right col-6">
+                        <p>Quiz</p>
+                    </div>
+
+                </div>
+
+                <div class="left-container-body">
+                    <i>Question 2 of 20</i>
+                    <p>Which of the words is not related to School ?</p>
+                </div>
+            </div>
+
+            <div class="right-container col-6">
+                <div class="right-container-top">
+                    <i class="fa-regular fa-moon"></i>
+
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+
+                <div class="btn-div" onclick="Q2Btn1()" id="Q2Btn_1">
+                    <div class="btn-div-left col-2">
+                        <div class="btn-div-left-letters">A</div>
+                    </div>
+                    <div class="btn-div-right col-10">
+
+                        <button id="Q2Btn1">Uniform</button>
+
+
+                    </div>
+                </div>
+                <div class="btn-div" onclick="Q2Btn2()" id="Q2Btn_2">
+                    <div class="btn-div-left col-2">
+                        <div class="btn-div-left-letters">B</div>
+                    </div>
+                    <div class="btn-div-right col-10">
+                        <button id="Q2Btn2">Pin</button>
+
+                    </div>
+                </div>
+                <div class="btn-div" onclick="Q2Btn3()" id="Q2Btn_3">
+                    <div class="btn-div-left col-2">
+                        <div class="btn-div-left-letters">C</div>
+                    </div>
+                    <div class="btn-div-right col-10">
+                        <button id="Q2Btn3">Bag</button>
+
+                    </div>
+                </div>
+                <div class="btn-div" onclick="Q2Btn4()" id="Q2Btn_4">
+                    <div class="btn-div-left col-2">
+                        <div class="btn-div-left-letters">D</div>
+                    </div>
+                    <div class="btn-div-right col-10">
+                        <button id="Q2Btn4">Rat</button>
+                    </div>
+                </div>
+                <button class="NextBtn" id="NExtBtnQ2">Next <i class="fa-solid fa-forward"></i> </button>
+                <button class="PreviousBtn" id="PreviousBtnQ2" onclick="PreviousBtnQ2()"> <i
+                        class="fa-solid fa-backward"></i> Previous</button>
+
+
+                <!-- <button class="" id="NExtBtnQ1" onclick="NExtBtnQ1()">Next</button> -->
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div id="Question1">
             <p>Which of the words is not related to transportation ?</p>
             <button onclick="Q1Btn1()" id="Q1Btn1">Animal</button>
             <button onclick="Q1Btn2()" id="Q1Btn2">Car</button>
             <button onclick="Q1Btn3()" id="Q1Btn3">Bike</button>
             <button onclick="Q1Btn4()" id="Q1Btn4">Train</button>
 
-           
+
             <button class="NExtBtn" id="NExtBtnQ1" onclick="NExtBtnQ1()">Next</button>
             <p>Question 1</p>
         </div>
 
-        <!-- Question 2 -->
+
 
         <div id="Question2">
             <p>Which of the words is not related to School ?</p>
@@ -54,12 +203,13 @@
             <button class="NExtBtn" id="NExtBtnQ2">Next</button>
 
             <p>Question 2</p>
-        </div>
-
-    </center>
+        </div> -->
 
 
-    <script src="QuizPractical.js"></script>
+
+
+        <script src="QuizPractical.js"></script>
+        <script src="https://kit.fontawesome.com/813b700df1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
