@@ -383,5 +383,11 @@ body {
         display: none;
     }
 
+    .right-container .NextBtn,
+.PreviousBtn {
+    font-size: 20px;
+
+}
+
    
 }
