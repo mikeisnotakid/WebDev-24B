@@ -73,25 +73,23 @@ function CheckUSerNAmeValue() {
     }
 }
 
-function HmLOGinBtn() {
-    var HmLOGinBtn = document.getElementById('HmLOGinBtn')
+// function HmLOGinBtn() {
+//     var HmLOGinBtn = document.getElementById('HmLOGinBtn');
+//     var alertMEssage = document.getElementById('alertMEssage');
+//     var PasswordValue = document.getElementById('PasswordValue').value;
 
-    var alertMEssage = document.getElementById('alertMEssage');
-    var PasswordValue = document.getElementById('PasswordValue').value;
-
-    if (PasswordValue.length >= 7) {
-
-        alertMEssage.innerHTML = 'Password is strong';
-        alertMEssage.style.color = 'blue';
-        HmLOGinBtn.style.visibility = 'visible';
+//     if (PasswordValue.length >= 7) {
+//         alertMEssage.innerHTML = 'Details Verified Login !!';
+//         alertMEssage.style.color = 'blue';
+//         HmLOGinBtn.style.visibility = 'visible';
 
 
-    } else {
-        alertMEssage.innerHTML = 'Password is not strong';
-        alertMEssage.style.color = 'red';
-        HmLOGinBtn.style.visibility = 'hidden'
-    }
-}
+//     } else {
+//         alertMEssage.innerHTML = 'Incorect Details';
+//         alertMEssage.style.color = 'red';
+//         HmLOGinBtn.style.visibility = 'hidden'
+//     }
+// }
 
 
 // if (PasswordValue.length >= 7){
