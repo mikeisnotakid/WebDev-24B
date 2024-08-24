@@ -379,5 +379,9 @@ body {
     
     }
 
+    .right-container-top{
+        display: none;
+    }
+
    
 }
