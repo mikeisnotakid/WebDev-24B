@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Quiz | Home Page</title>
+    <link rel="icon" href="images/mike_logo-removebg-preview.png">
+    <link rel="stylesheet" href="QuizPractical.css">
+</head>
+
+<body>
+    <div class="home-main-container">
+        <div class="home-main-container-box col-6 col-md-10">
+
+            <center>
+
+                <div id="LoginDiv">
+                    <h1>Welcome Back</h1>
+                    <p>Enter your details to login</p>
+
+                    <h3 id="alertMEssage"></h3>
+                    <input type="text" placeholder=" Username" onkeyup="DisplayLoginBtn()" id="USernameValue">
+                    <input type="password" placeholder="Password" onkeyup="CheckUSerNAmeValue()" id="PasswordValue">
+
+                  
+                    <a href="QuizPractical.html"> <button id="HmLOGinBtn" onclick="HmLOGinBtn()">Login Now</button></a>
+
+                    <p id="DontHaveAcc">Don't have an account ? <span id="SignUpSpan" onclick="ShowSignUp()">Sign
+                            Up</span></p>
+                </div>
+
+            </center>
+
+            <center>
+                <div id="SignUpDiv">
+                    <h1>Sign Up</h1>
+                    <p>Create an account </p>
+                    <input type="text" placeholder=" Username">
+                    <input type="email" placeholder=" email">
+                    <input type="password" placeholder="Password">
+
+                    <button>Sign Up</button>
+
+                    <p id="DontHaveAcc">Already have an account? <span id="SignUpSpan"
+                            onclick="ShowLogin()">Login</span></p>
+                </div>
+
+            </center>
+
+        </div>
+
+    </div>
+
+
+    <script src="QuizPractical.js"></script>
+    <script src="https://kit.fontawesome.com/813b700df1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

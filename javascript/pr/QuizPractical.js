@@ -14,20 +14,106 @@ var Question2Ans = 'Rat';
 
 // }
 
+function ShowSignUp() {
+    var SignUpDiv = document.getElementById('SignUpDiv');
+    var LoginDiv = document.getElementById('LoginDiv');
+    LoginDiv.style.display = 'none'
+    SignUpDiv.style.display = 'block';
 
-function ChangeToLightMode(){
-    var RightContainer = document.getElementById('RightContainer');
-    var LeftContainer = document.getElementById('LeftContainer');
-    var LeftContainerBody = document.getElementById('LeftContainerBody');
-    var FaSun = document.getElementById('FaSun');
-
-    RightContainer.style.backgroundColor = 'white'
-    LeftContainer.style.backgroundColor = 'white'
-    LeftContainerBody.style.color = 'black'
-    FaSun.style.color = 'purple'
-    FaSun.style.display = 'none'
-    
 }
+
+function ShowLogin() {
+    var SignUpDiv = document.getElementById('SignUpDiv');
+    var LoginDiv = document.getElementById('LoginDiv');
+    LoginDiv.style.display = 'block'
+    SignUpDiv.style.display = 'none';
+}
+
+function DisplayLoginBtn() {
+    var HmLOGinBtn = document.getElementById('HmLOGinBtn')
+    var USernameValue = document.getElementById('USernameValue').value;
+    var alertMEssage = document.getElementById('alertMEssage');
+    var PasswordValue = document.getElementById('PasswordValue').value;
+
+    if (PasswordValue.length >= 7 && USernameValue.length >= 1) {
+
+        alertMEssage.innerHTML = 'Details Verified Login !!';
+        alertMEssage.style.color = 'blue';
+        // HmLOGinBtn.style.visibility = 'visible'
+
+
+        HmLOGinBtn.style.display = 'block'
+
+    } else {
+        alertMEssage.innerHTML = 'Incorect Details';
+        alertMEssage.style.color = 'red';
+        HmLOGinBtn.style.display = 'none'
+    }
+}
+
+function CheckUSerNAmeValue() {
+    var HmLOGinBtn = document.getElementById('HmLOGinBtn')
+    var USernameValue = document.getElementById('USernameValue').value;
+    var alertMEssage = document.getElementById('alertMEssage');
+    var PasswordValue = document.getElementById('PasswordValue').value;
+
+    if (PasswordValue.length >= 7 && USernameValue.length >= 1) {
+
+        alertMEssage.innerHTML = 'Details Verified Login !!';
+        alertMEssage.style.color = 'blue';
+        // HmLOGinBtn.style.visibility = 'visible'
+
+
+        HmLOGinBtn.style.display = 'block'
+
+    } else {
+        alertMEssage.innerHTML = 'Incorect Details';
+        alertMEssage.style.color = 'red';
+        HmLOGinBtn.style.display = 'none'
+    }
+}
+
+function HmLOGinBtn() {
+    var HmLOGinBtn = document.getElementById('HmLOGinBtn')
+
+    var alertMEssage = document.getElementById('alertMEssage');
+    var PasswordValue = document.getElementById('PasswordValue').value;
+
+    if (PasswordValue.length >= 7) {
+
+        alertMEssage.innerHTML = 'Password is strong';
+        alertMEssage.style.color = 'blue';
+        HmLOGinBtn.style.visibility = 'visible';
+
+
+    } else {
+        alertMEssage.innerHTML = 'Password is not strong';
+        alertMEssage.style.color = 'red';
+        HmLOGinBtn.style.visibility = 'hidden'
+    }
+}
+
+
+// if (PasswordValue.length >= 7){
+
+//    HmLOGinBtn2.style.display = 'block' 
+// }else{
+//     HmLOGinBtn2.style.display = 'none' 
+// }
+
+// function ChangeToLightMode() {
+//     var RightContainer = document.getElementById('RightContainer');
+//     var LeftContainer = document.getElementById('LeftContainer');
+//     var LeftContainerBody = document.getElementById('LeftContainerBody');
+//     var FaSun = document.getElementById('FaSun');
+
+//     RightContainer.style.backgroundColor = 'white'
+//     LeftContainer.style.backgroundColor = 'white'
+//     LeftContainerBody.style.color = 'black'
+//     FaSun.style.color = 'purple'
+//     FaSun.style.display = 'none'
+
+// }
 
 
 
