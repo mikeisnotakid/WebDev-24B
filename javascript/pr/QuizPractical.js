@@ -57,7 +57,7 @@ function CheckUSerNAmeValue() {
     var alertMEssage = document.getElementById('alertMEssage');
     var PasswordValue = document.getElementById('PasswordValue').value;
 
-    if (PasswordValue.length >= 7 && USernameValue.length >= 1) {
+    if (PasswordValue.length >= 7 && USernameValue.length >= 3) {
 
         alertMEssage.innerHTML = 'Details Verified Login !!';
         alertMEssage.style.color = 'blue';

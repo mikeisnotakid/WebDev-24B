@@ -9,6 +9,23 @@ body {
     background-color: rgb(36, 65, 92);
 }
 
+#WelcomeH1 {
+    text-transform: uppercase;
+    padding: 5px 0;
+    font-size: 35px;
+}
+
+#FirstH3{
+    padding: 5px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+#alertMEssage {
+    padding: 10px 0;
+}
+
 
 .home-main-container {
     height: 100vh;
@@ -26,7 +43,8 @@ body {
     padding: 20px 0;
 }
 
-.home-main-container-box input, #HmLOGinBtn {
+.home-main-container-box input,
+#HmLOGinBtn {
     height: 80px;
     display: block;
     width: 80%;
@@ -63,13 +81,14 @@ body {
 }
 
 
-#HmLOGinBtn{
+#HmLOGinBtn {
     display: none;
     animation-name: MoveHmLOGinBtn;
     animation-duration: 0.4s;
-  
+
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -80,8 +99,8 @@ a{
         width: 30px;
     }
 
-  
-  
+
+
 
     100% {
         transform: translateY(35px);

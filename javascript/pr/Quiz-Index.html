@@ -16,14 +16,18 @@
             <center>
 
                 <div id="LoginDiv">
-                    <h1>Welcome Back</h1>
-                    <p>Enter your details to login</p>
+                    <h1 id="WelcomeH1">Welcome Back</h1>
+                    <h3 id="FirstH3">Enter your details to login</h3>
+                    <hr>
 
-                    <h3 id="alertMEssage"></h3>
+                    <p id="alertMEssage">Note: Username must be greater than 3 words and password must be greater than 6
+                        digits </p>
+
+                    <hr>
                     <input type="text" placeholder=" Username" onkeyup="DisplayLoginBtn()" id="USernameValue">
                     <input type="password" placeholder="Password" onkeyup="CheckUSerNAmeValue()" id="PasswordValue">
 
-                  
+
                     <a href="QuizPractical.html"> <button id="HmLOGinBtn" onclick="HmLOGinBtn()">Login Now</button></a>
 
                     <p id="DontHaveAcc">Don't have an account ? <span id="SignUpSpan" onclick="ShowSignUp()">Sign
