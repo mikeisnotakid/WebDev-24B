@@ -27,9 +27,9 @@
 <body>
 
     <div class="main-container" id="Question1">
-        <div class="left-container col-6">
+        <div class="left-container col-6 col-md-12">
             <div class="left-container-top">
-                <div class="left-container-top-left col-6"> <img src="images/mike_logo-removebg-preview.png"></div>
+                <div class="left-container-top-left col-6 "> <img src="images/mike_logo-removebg-preview.png"></div>
                 <div class="left-container-top-right col-6">
                     <p>Quiz</p>
                 </div>
@@ -42,7 +42,7 @@
             </div>
         </div>
 
-        <div class="right-container col-6">
+        <div class="right-container col-6 col-md-12">
             <div class="right-container-top">
                 <i class="fa-regular fa-moon"></i>
 
@@ -88,87 +88,83 @@
             </button>
         </div>
 
+    </div>
+
+
+    <!-- Question 2 -->
+
+    <div class="main-container" id="Question2">
+        <div class="left-container col-6 col-md-12">
+            <div class="left-container-top">
+                <div class="left-container-top-left col-6"> <img src="images/mike_logo-removebg-preview.png"></div>
+                <div class="left-container-top-right col-6">
+                    <p>Quiz</p>
+                </div>
+
+            </div>
+
+            <div class="left-container-body">
+                <i>Question 2 of 20</i>
+                <p>Which of the words is not related to School ?</p>
+            </div>
         </div>
 
+        <div class="right-container col-6 col-md-12">
+            <div class="right-container-top">
+                <i class="fa-regular fa-moon"></i>
 
-        <!-- Question 2 -->
-
-        <div class="main-container" id="Question2">
-            <div class="left-container col-6" >
-                <div class="left-container-top">
-                    <div class="left-container-top-left col-6"> <img src="images/mike_logo-removebg-preview.png"></div>
-                    <div class="left-container-top-right col-6">
-                        <p>Quiz</p>
-                    </div>
-
-                </div>
-
-                <div class="left-container-body">
-                    <i>Question 2 of 20</i>
-                    <p>Which of the words is not related to School ?</p>
-                </div>
+                <i class="fa-solid fa-sun"></i>
             </div>
 
-            <div class="right-container col-6">
-                <div class="right-container-top">
-                    <i class="fa-regular fa-moon"></i>
-
-                    <i class="fa-solid fa-sun"></i>
+            <div class="btn-div" onclick="Q2Btn1()" id="Q2Btn_1">
+                <div class="btn-div-left col-2">
+                    <div class="btn-div-left-letters">A</div>
                 </div>
+                <div class="btn-div-right col-10">
 
-                <div class="btn-div" onclick="Q2Btn1()" id="Q2Btn_1">
-                    <div class="btn-div-left col-2">
-                        <div class="btn-div-left-letters">A</div>
-                    </div>
-                    <div class="btn-div-right col-10">
-
-                        <button id="Q2Btn1">Uniform</button>
+                    <button id="Q2Btn1">Uniform</button>
 
 
-                    </div>
                 </div>
-                <div class="btn-div" onclick="Q2Btn2()" id="Q2Btn_2">
-                    <div class="btn-div-left col-2">
-                        <div class="btn-div-left-letters">B</div>
-                    </div>
-                    <div class="btn-div-right col-10">
-                        <button id="Q2Btn2">Pin</button>
-
-                    </div>
-                </div>
-                <div class="btn-div" onclick="Q2Btn3()" id="Q2Btn_3">
-                    <div class="btn-div-left col-2">
-                        <div class="btn-div-left-letters">C</div>
-                    </div>
-                    <div class="btn-div-right col-10">
-                        <button id="Q2Btn3">Bag</button>
-
-                    </div>
-                </div>
-                <div class="btn-div" onclick="Q2Btn4()" id="Q2Btn_4">
-                    <div class="btn-div-left col-2">
-                        <div class="btn-div-left-letters">D</div>
-                    </div>
-                    <div class="btn-div-right col-10">
-                        <button id="Q2Btn4">Rat</button>
-                    </div>
-                </div>
-                <button class="NextBtn" id="NExtBtnQ2">Next <i class="fa-solid fa-forward"></i> </button>
-                <button class="PreviousBtn" id="PreviousBtnQ2" onclick="PreviousBtnQ2()"> <i
-                        class="fa-solid fa-backward"></i> Previous</button>
-
-
-                <!-- <button class="" id="NExtBtnQ1" onclick="NExtBtnQ1()">Next</button> -->
             </div>
+            <div class="btn-div" onclick="Q2Btn2()" id="Q2Btn_2">
+                <div class="btn-div-left col-2">
+                    <div class="btn-div-left-letters">B</div>
+                </div>
+                <div class="btn-div-right col-10">
+                    <button id="Q2Btn2">Pin</button>
+
+                </div>
+            </div>
+            <div class="btn-div" onclick="Q2Btn3()" id="Q2Btn_3">
+                <div class="btn-div-left col-2">
+                    <div class="btn-div-left-letters">C</div>
+                </div>
+                <div class="btn-div-right col-10">
+                    <button id="Q2Btn3">Bag</button>
+
+                </div>
+            </div>
+            <div class="btn-div" onclick="Q2Btn4()" id="Q2Btn_4">
+                <div class="btn-div-left col-2">
+                    <div class="btn-div-left-letters">D</div>
+                </div>
+                <div class="btn-div-right col-10">
+                    <button id="Q2Btn4">Rat</button>
+                </div>
+            </div>
+            <button class="NextBtn" id="NExtBtnQ2">Next <i class="fa-solid fa-forward"></i> </button>
+            <button class="PreviousBtn" id="PreviousBtnQ2" onclick="PreviousBtnQ2()"> <i
+                    class="fa-solid fa-backward"></i> Previous</button>
 
 
-
-
+            <!-- <button class="" id="NExtBtnQ1" onclick="NExtBtnQ1()">Next</button> -->
         </div>
 
 
 
 
+    </div>
 
 
 
@@ -178,7 +174,11 @@
 
 
 
-        <!-- <div id="Question1">
+
+
+
+
+    <!-- <div id="Question1">
             <p>Which of the words is not related to transportation ?</p>
             <button onclick="Q1Btn1()" id="Q1Btn1">Animal</button>
             <button onclick="Q1Btn2()" id="Q1Btn2">Car</button>
@@ -208,8 +208,8 @@
 
 
 
-        <script src="QuizPractical.js"></script>
-        <script src="https://kit.fontawesome.com/813b700df1.js" crossorigin="anonymous"></script>
+    <script src="QuizPractical.js"></script>
+    <script src="https://kit.fontawesome.com/813b700df1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
