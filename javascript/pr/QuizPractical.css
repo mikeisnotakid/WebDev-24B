@@ -26,6 +26,10 @@ body {
     padding: 10px 0;
 }
 
+#USernameValue{
+    margin-top: 40px;
+}
+
 
 .home-main-container {
     height: 100vh;
@@ -44,7 +48,7 @@ body {
 }
 
 .home-main-container-box input,
-#HmLOGinBtn {
+#HmLOGinBtn, #SecondBtn{
     height: 80px;
     display: block;
     width: 80%;
@@ -54,7 +58,7 @@ body {
     font-size: 20px;
 }
 
-.home-main-container-box #HmLOGinBtn {
+.home-main-container-box #HmLOGinBtn, #SecondBtn {
     background-color: rgb(36, 65, 92);
     font-size: 25px;
     color: white;
