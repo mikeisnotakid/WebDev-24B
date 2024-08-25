@@ -14,6 +14,26 @@ var Question2Ans = 'Rat';
 
 // }
 
+// Home Page 
+
+var UserDetails = [];
+
+function SubmitLogIn() {
+    var SignUpuserName = document.getElementById('SignUpuserName').value;
+    var SignUpEmail = document.getElementById('SignUpEmail').value;
+    var SignUpPassword = document.getElementById('SignUpPassword').value;
+
+    UserDetails[UserDetails.length] = { Name: SignUpuserName, Pass: SignUpPassword }
+
+    var SignUpuserName = document.getElementById('SignUpuserName').value = '';
+    var SignUpEmail = document.getElementById('SignUpEmail').value = '';
+    var SignUpPassword = document.getElementById('SignUpPassword').value = '';
+
+    console.log(UserDetails)
+
+
+}
+
 function ShowSignUp() {
     var SignUpDiv = document.getElementById('SignUpDiv');
     var LoginDiv = document.getElementById('LoginDiv');
@@ -34,21 +54,33 @@ function DisplayLoginBtn() {
     var USernameValue = document.getElementById('USernameValue').value;
     var alertMEssage = document.getElementById('alertMEssage');
     var PasswordValue = document.getElementById('PasswordValue').value;
-
-    if (PasswordValue.length >= 7 && USernameValue.length >= 1) {
-
+    if (UserDetails.length == 0) {
+        alertMEssage.innerHTML = 'Incorect Details';
+        alertMEssage.style.color = 'red';
+        HmLOGinBtn.style.display = 'none'
+    } else if (UserDetails[0].Name == USernameValue && UserDetails[0].Pass == PasswordValue) {
         alertMEssage.innerHTML = 'Details Verified Login !!';
         alertMEssage.style.color = 'blue';
-        // HmLOGinBtn.style.visibility = 'visible'
-
-
         HmLOGinBtn.style.display = 'block'
-
     } else {
         alertMEssage.innerHTML = 'Incorect Details';
         alertMEssage.style.color = 'red';
         HmLOGinBtn.style.display = 'none'
     }
+    // if (UserDetails[0].Name == USernameValue && UserDetails[0].Pass == PasswordValue) {
+
+    //     alertMEssage.innerHTML = 'Details Verified Login !!';
+    //     alertMEssage.style.color = 'blue';
+    //     // HmLOGinBtn.style.visibility = 'visible'
+
+
+    //     HmLOGinBtn.style.display = 'block'
+
+    // } else {
+    //     alertMEssage.innerHTML = 'Incorect Details';
+    //     alertMEssage.style.color = 'red';
+    //     HmLOGinBtn.style.display = 'none'
+    // }
 }
 
 function CheckUSerNAmeValue() {
@@ -56,21 +88,33 @@ function CheckUSerNAmeValue() {
     var USernameValue = document.getElementById('USernameValue').value;
     var alertMEssage = document.getElementById('alertMEssage');
     var PasswordValue = document.getElementById('PasswordValue').value;
-
-    if (PasswordValue.length >= 7 && USernameValue.length >= 3) {
-
+    if (UserDetails.length == 0) {
+        alertMEssage.innerHTML = 'Incorect Details';
+        alertMEssage.style.color = 'red';
+        HmLOGinBtn.style.display = 'none'
+    } else if (UserDetails[0].Name == USernameValue && UserDetails[0].Pass == PasswordValue) {
         alertMEssage.innerHTML = 'Details Verified Login !!';
         alertMEssage.style.color = 'blue';
-        // HmLOGinBtn.style.visibility = 'visible'
-
-
         HmLOGinBtn.style.display = 'block'
-
     } else {
         alertMEssage.innerHTML = 'Incorect Details';
         alertMEssage.style.color = 'red';
         HmLOGinBtn.style.display = 'none'
     }
+    // if (UserDetails[0].Name == USernameValue && UserDetails[0].Pass == PasswordValue) {
+
+    //     alertMEssage.innerHTML = 'Details Verified Login !!';
+    //     alertMEssage.style.color = 'blue';
+    //     // HmLOGinBtn.style.visibility = 'visible'
+
+
+    //     HmLOGinBtn.style.display = 'block'
+
+    // } else {
+    //     alertMEssage.innerHTML = 'Incorect Details';
+    //     alertMEssage.style.color = 'red';
+    //     HmLOGinBtn.style.display = 'none'
+    // }
 }
 
 // function HmLOGinBtn() {
@@ -303,4 +347,108 @@ function Q2Btn4() {
 function PreviousBtnQ2() {
     document.getElementById('Question1').style.display = 'block'
     document.getElementById('Question2').style.display = 'none'
+}
+
+function NExtBtnQ2() {
+    document.getElementById('Question3').style.display = 'block'
+    document.getElementById('Question2').style.display = 'none'
+}
+
+
+
+// Question 3
+
+
+function Q3Btn1() {
+    var Q3Btn_1 = document.getElementById('Q3Btn_1')
+    var Q3Btn1 = document.getElementById('Q3Btn1').innerHTML;
+    if (Q3Btn1 == Question2Ans) {
+        // alert('Correct')
+        Q3Btn_1.style.border = '4px solid blue'
+        Q3Btn_1.style.borderRadius = '15px'
+
+        document.getElementById('Q2Btn_2').style.visibility = 'hidden'
+        document.getElementById('Q2Btn_3').style.visibility = 'hidden'
+        document.getElementById('Q2Btn_4').style.visibility = 'hidden'
+    } else {
+        // alert('Wrong')
+        Q3Btn_1.style.border = '4px solid red'
+        Q3Btn_1.style.borderRadius = '15px'
+        document.getElementById('Q3Btn_2').style.visibility = 'hidden'
+        document.getElementById('Q3Btn_3').style.visibility = 'hidden'
+        document.getElementById('Q3Btn_4').style.visibility = 'hidden'
+    }
+}
+
+function Q3Btn2() {
+    var Q3Btn_2 = document.getElementById('Q2Btn_2')
+    var Q3Btn2 = document.getElementById('Q2Btn2').innerHTML;
+    if (Q3Btn2 == Question2Ans) {
+        // alert('Correct')
+        Q3Btn_2.style.border = '4px solid blue'
+        Q3Btn_2.style.borderRadius = '15px'
+
+        document.getElementById('Q3Btn_1').style.visibility = 'hidden'
+        document.getElementById('Q3Btn_3').style.visibility = 'hidden'
+        document.getElementById('Q3Btn_4').style.visibility = 'hidden'
+    } else {
+        // alert('Wrong')
+        Q3Btn_2.style.border = '4px solid red'
+        Q3Btn_2.style.borderRadius = '15px'
+        document.getElementById('Q3Btn_1').style.visibility = 'hidden'
+        document.getElementById('Q3Btn_3').style.visibility = 'hidden'
+        document.getElementById('Q3Btn_4').style.visibility = 'hidden'
+    }
+}
+
+function Q3Btn3() {
+    var Q3Btn_3 = document.getElementById('Q3Btn_3')
+    var Q3Btn3 = document.getElementById('Q3Btn3').innerHTML;
+    if (Q3Btn3 == Question2Ans) {
+        // alert('Correct')
+        Q3Btn_3.style.border = '4px solid blue'
+        Q3Btn_3.style.borderRadius = '15px'
+
+        document.getElementById('Q3Btn_1').style.visibility = 'hidden'
+        document.getElementById('Q3Btn_2').style.visibility = 'hidden'
+        document.getElementById('Q3Btn_4').style.visibility = 'hidden'
+    } else {
+        // alert('Wrong')
+        Q3Btn_3.style.border = '4px solid red'
+        Q3Btn_3.style.borderRadius = '15px'
+        document.getElementById('Q3Btn_1').style.visibility = 'hidden'
+        document.getElementById('Q3Btn_2').style.visibility = 'hidden'
+        document.getElementById('Q3Btn_4').style.visibility = 'hidden'
+    }
+}
+
+function Q3Btn4() {
+    var Q3Btn_4 = document.getElementById('Q2Btn_4')
+    var Q3Btn4 = document.getElementById('Q2Btn4').innerHTML;
+    if (Q3Btn4 == Question2Ans) {
+        // alert('Correct')
+        Q3Btn_4.style.border = '4px solid blue'
+        Q3Btn_4.style.borderRadius = '15px'
+
+        document.getElementById('Q3Btn_1').style.visibility = 'hidden'
+        document.getElementById('Q3Btn_2').style.visibility = 'hidden'
+        document.getElementById('Q3Btn_3').style.visibility = 'hidden'
+    } else {
+        // alert('Wrong')
+        Q3Btn_4.style.border = '4px solid red'
+        Q3Btn_4.style.borderRadius = '15px'
+        document.getElementById('Q3Btn_1').style.visibility = 'hidden'
+        document.getElementById('Q3Btn_2').style.visibility = 'hidden'
+        document.getElementById('Q3Btn_3').style.visibility = 'hidden'
+    }
+}
+
+function PreviousBtnQ3() {
+    document.getElementById('Question2').style.display = 'block'
+    document.getElementById('Question3').style.display = 'none'
+}
+
+function NExtBtnQ3() {
+    document.getElementById('Question4').style.display = 'block'
+    document.getElementById('Question3').style.display = 'none'
 }

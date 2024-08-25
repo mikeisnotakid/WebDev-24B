@@ -15,7 +15,7 @@ body {
     font-size: 35px;
 }
 
-#FirstH3{
+#FirstH3 {
     padding: 5px 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
@@ -26,7 +26,7 @@ body {
     padding: 10px 0;
 }
 
-#USernameValue{
+#USernameValue {
     margin-top: 40px;
 }
 
@@ -50,28 +50,29 @@ body {
 }
 
 @keyframes MoveHomeContainerBox {
-    
-    10%{
-transform: translateY(-10%);
-width: 20%;
 
-background-color: rgb(36, 65, 92);
-box-shadow: purple 10px 10px 10px 10px;
+    10% {
+        transform: translateY(-10%);
+        width: 20%;
+
+        background-color: rgb(36, 65, 92);
+        box-shadow: purple 10px 10px 10px 10px;
 
 
 
     }
 
-    
-    100%{
+
+    100% {
         transform: translateY(-100%);
-        
+
     }
-    
+
 }
 
 .home-main-container-box input,
-#HmLOGinBtn, #SecondBtn{
+#HmLOGinBtn,
+#SecondBtn {
     height: 80px;
     display: block;
     width: 80%;
@@ -81,7 +82,8 @@ box-shadow: purple 10px 10px 10px 10px;
     font-size: 20px;
 }
 
-.home-main-container-box #HmLOGinBtn, #SecondBtn {
+.home-main-container-box #HmLOGinBtn,
+#SecondBtn {
     background-color: rgb(36, 65, 92);
     font-size: 25px;
     color: white;
@@ -404,6 +406,10 @@ a {
     padding: 0 20px;
     font-size: 20px;
     color: white;
+}
+
+#Question3{
+    display: none;
 }
 
 @media only screen and (max-width: 1400px) {
