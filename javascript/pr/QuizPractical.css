@@ -45,6 +45,29 @@ body {
     background-color: purple;
     border-radius: 10px;
     padding: 20px 0;
+    animation-name: MoveHomeContainerBox;
+    animation-duration: 0.6s;
+}
+
+@keyframes MoveHomeContainerBox {
+    
+    10%{
+transform: translateY(-10%);
+width: 20%;
+
+background-color: rgb(36, 65, 92);
+box-shadow: purple 10px 10px 10px 10px;
+
+
+
+    }
+
+    
+    100%{
+        transform: translateY(-100%);
+        
+    }
+    
 }
 
 .home-main-container-box input,
