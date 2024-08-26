@@ -30,6 +30,8 @@ function SubmitLogIn() {
         UserDetails[UserDetails.length] = { Name: SignUpuserName, Pass: SignUpPassword }
         var SignUpDiv = document.getElementById('SignUpDiv');
         SignUpDiv.style.display = 'none'
+
+
         var SignUpuserName = document.getElementById('SignUpuserName').value = '';
         var SignUpEmail = document.getElementById('SignUpEmail').value = '';
         var SignUpPassword = document.getElementById('SignUpPassword').value = '';
