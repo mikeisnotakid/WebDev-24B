@@ -408,11 +408,11 @@ a {
     color: white;
 }
 
-#Question3{
+#Question3 {
     display: none;
 }
 
-#registrationSucDiv{
+#registrationSucDiv {
     /* border: 4px solid green; */
     height: 600px;
     /* position: relative;
@@ -423,7 +423,7 @@ a {
 
 }
 
-.registrationSucDiv-top{
+.registrationSucDiv-top {
     height: 40%;
     background-color: rgba(22, 37, 56, 0.99);
     padding: 50px 0;
@@ -432,34 +432,62 @@ a {
     animation-name: MoveRegSucDivTop;
     animation-duration: 0.7s;
 }
+
 @keyframes MoveRegSucDivTop {
-    10%{
+    10% {
         transform: translateY(10%);
+
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+
+
+}
+
+.fa-check {
+    padding: 0 20px;
+    font-size: 90px;
+
+    border-radius: 25px;
+    color: purple;
+}
+
+.fa-check-circle {
+    height: 120px;
+    width: 120px;
+    background-color: white;
+    animation-name: MoveFaCircle;
+    animation-duration: 1.5s;
+    animation-delay: 0.7s;
+    animation-iteration-count: infinite;
+    margin: auto;
+    border-radius: 60px;
+}
+
+@keyframes MoveFaCircle {
+    10% {
+
+
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+        transform: translateY(-20%);
+        transform: rotate(360deg);
+
         
     }
 
-    100%{
-        transform: translateY(100%);
-    }
+    100% {
     
+        transform: rotate(-360deg);
+        transform: translateY(20%);
+    }
 
 }
-.fa-check{
-   padding: 0 20px;
-    font-size: 60px;
 
-  border-radius: 25px;
-  color: blue;
-}
-
-.fa-check-circle{
-    height: 90px;
-    width: 90px;
-    background-color: white;
-    margin: auto;
-    border-radius: 30px;
-}
-.registrationSucDiv-bottom{
+.registrationSucDiv-bottom {
     height: 60%;
     padding: 50px 0;
     border-bottom-left-radius: 10px;
@@ -470,26 +498,26 @@ a {
 }
 
 @keyframes MoveRegSucDivBottom {
-    10%{
+    10% {
         transform: translateY(-10%);
-        
+
     }
 
-    100%{
+    100% {
         transform: translateY(-100%);
     }
-    
+
 
 }
 
-#RegSucH1{
+#RegSucH1 {
     font-size: 40px;
     margin: 20px 0;
-font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgba(22, 37, 56, 0.99);
 }
 
-#RegSucBtn{
+#RegSucBtn {
     height: 40px;
     width: 200px;
     border: none;
@@ -501,11 +529,13 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
-#SignUpP{
+
+#SignUpP {
     padding: 10px 0;
     font-size: 25px;
 }
-#SignAlert{
+
+#SignAlert {
     color: red;
     background-color: white;
     animation-name: MoveSignUpAlert;
@@ -513,17 +543,20 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     display: none;
 
 }
+
 @keyframes MoveSignUpAlert {
-    10%{
+    10% {
         transform: translateY(10%);
         margin: 0 50px;
-        
+
     }
-    100%{
+
+    100% {
         margin: 0 80px;
         transform: translateY(100%);
     }
 }
+
 @media only screen and (max-width: 1400px) {
     * {
         box-sizing: border-box;
