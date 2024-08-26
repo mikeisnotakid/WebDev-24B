@@ -23,15 +23,37 @@ function SubmitLogIn() {
     var SignUpEmail = document.getElementById('SignUpEmail').value;
     var SignUpPassword = document.getElementById('SignUpPassword').value;
 
-    UserDetails[UserDetails.length] = { Name: SignUpuserName, Pass: SignUpPassword }
 
-    var SignUpuserName = document.getElementById('SignUpuserName').value = '';
-    var SignUpEmail = document.getElementById('SignUpEmail').value = '';
-    var SignUpPassword = document.getElementById('SignUpPassword').value = '';
+    if (SignUpuserName.length >= 3 && SignUpEmail.length >= 4 && SignUpPassword.length >= 4) {
+        var registrationSucDiv = document.getElementById('registrationSucDiv');
+        registrationSucDiv.style.display = 'block';
+        UserDetails[UserDetails.length] = { Name: SignUpuserName, Pass: SignUpPassword }
+        var SignUpDiv = document.getElementById('SignUpDiv');
+        SignUpDiv.style.display = 'none'
+        var SignUpuserName = document.getElementById('SignUpuserName').value = '';
+        var SignUpEmail = document.getElementById('SignUpEmail').value = '';
+        var SignUpPassword = document.getElementById('SignUpPassword').value = '';
+ 
+    }else{
+      var SignAlert = document.getElementById('SignAlert');
+      SignAlert.style.display = 'block'
+      SignAlert.innerHTML = 'Username, Email and Password Field is Required';
+      
+    }
 
-    console.log(UserDetails)
 
 
+
+
+}
+
+function RegSucBtn() {
+    var registrationSucDiv = document.getElementById('registrationSucDiv');
+    registrationSucDiv.style.display = 'none';
+    var LoginDiv = document.getElementById('LoginDiv');
+    LoginDiv.style.display = 'block'
+    var SignUpDiv = document.getElementById('SignUpDiv');
+    SignUpDiv.style.display = 'none'
 }
 
 function ShowSignUp() {

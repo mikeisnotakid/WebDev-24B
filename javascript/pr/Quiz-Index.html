@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="home-main-container">
+    <div class="home-main-container" >
         <div class="home-main-container-box col-6 col-md-10">
 
             <center>
@@ -37,9 +37,10 @@
             </center>
 
             <center>
-                <div id="SignUpDiv">
+                <div id="SignUpDiv" >
                     <h1>Sign Up</h1>
-                    <p>Create an account </p>
+                    <p id="SignUpP">Create an account </p>    
+                     <h3 id="SignAlert"></h3>
                     <input type="text" placeholder=" Username" id="SignUpuserName">
                     <input type="email" placeholder=" email" id="SignUpEmail">
                     <input type="password" placeholder="Password" id="SignUpPassword">
@@ -48,6 +49,23 @@
 
                     <p id="DontHaveAcc">Already have an account? <span id="SignUpSpan"
                             onclick="ShowLogin()">Login</span></p>
+
+
+
+                </div>
+
+                
+                <div id="registrationSucDiv" class="col-10 col-md-10">
+                    <div class="registrationSucDiv-top">
+                        <div class="fa-check-circle">
+                               <i class="fa-solid fa-check"></i>   
+                        </div>
+                  
+                    </div>
+                    <div class="registrationSucDiv-bottom">
+                        <h1 id="RegSucH1">Thanks for registration your with Mike Quiz</h1>
+                        <button id="RegSucBtn" onclick="RegSucBtn()">Login</button>
+                    </div>
                 </div>
 
             </center>
